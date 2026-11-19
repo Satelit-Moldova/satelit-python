@@ -48,7 +48,7 @@ markers = ["live: calls the real API (needs SATELIT_API_KEY)"]
 
 [tool.ruff]
 line-length = 120
-target-version = "py310"
+target-version = "py39"
 src = ["src", "tests", "scripts", "examples"]
 
 [tool.ruff.format]
@@ -61,7 +61,7 @@ known-local-folder = ["conftest", "_cache"]
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "S", "SIM", "RUF"]
 ignore = [
-  "UP006", "UP007", "UP035", "UP045",  # typing.List/Optional on purpose: the types are kept readable on older Pythons
+  "UP006", "UP007", "UP035", "UP045",  # typing.List/Optional on purpose: the types are kept in the 3.9 style the code was written in
   "S101",                              # assert in tests
   "RUF001", "RUF002", "RUF003",        # Romanian letters in strings and comments
 ]
