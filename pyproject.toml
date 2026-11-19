@@ -9,7 +9,7 @@ description = "Official Python SDK for the Satelit data API: Moldova's rates, fu
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "Satelit", email = "contact@satelit.md" }]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 dependencies = []
 keywords = ["satelit", "moldova", "api", "sdk", "exchange-rates", "fuel-prices", "bnm", "anre"]
 classifiers = [
@@ -19,7 +19,6 @@ classifiers = [
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
@@ -49,7 +48,7 @@ markers = ["live: calls the real API (needs SATELIT_API_KEY)"]
 
 [tool.ruff]
 line-length = 120
-target-version = "py39"
+target-version = "py310"
 src = ["src", "tests", "scripts", "examples"]
 
 [tool.ruff.format]
@@ -62,7 +61,7 @@ known-local-folder = ["conftest", "_cache"]
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "S", "SIM", "RUF"]
 ignore = [
-  "UP006", "UP007", "UP035", "UP045",  # typing.List/Optional on purpose: the types are read on Python 3.9
+  "UP006", "UP007", "UP035", "UP045",  # typing.List/Optional on purpose: the types are kept readable on older Pythons
   "S101",                              # assert in tests
   "RUF001", "RUF002", "RUF003",        # Romanian letters in strings and comments
 ]

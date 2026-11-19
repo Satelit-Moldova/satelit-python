@@ -37,7 +37,7 @@ print(next(x["value"] for x in r.data if x["code"] == "EUR"), r.meta["attributio
 
 ## Requirements
 
-- Python 3.9 or newer.
+- Python 3.10 or newer.
 - A Satelit API key (`sat_live_…`) from the [console](https://developer.satelit.md/en/console/). The API is paid: see [pricing](https://developer.satelit.md/en/pricing/). To look before you buy, the keyless routes (`sample`, `products`, `plans`, `status`, `stats`, `movies.board`) work without a key.
 
 ## Install
@@ -362,7 +362,7 @@ To follow a newer API: `curl -o spec/openapi.json https://api.satelit.md/openapi
 | mypy | 2.4.1 | `mypy src/satelit`, no issues |
 | OS | Windows 11 | all of the above |
 
-CI runs the offline tests and ruff on Python 3.9, 3.10, 3.11, 3.12 and 3.13; 3.9, 3.10 and 3.12 were not run on a local machine. The SDK's `User-Agent` (`satelit-python/1.0.0`) was accepted by the API's edge on every live call.
+CI runs the offline tests and ruff on Python 3.10, 3.11, 3.12 and 3.13; 3.10 and 3.12 were not run on a local machine. The SDK's `User-Agent` (`satelit-python/1.0.0`) was accepted by the API's edge on every live call.
 
 ## Troubleshooting
 
@@ -378,7 +378,7 @@ CI runs the offline tests and ruff on Python 3.9, 3.10, 3.11, 3.12 and 3.13; 3.9
 
 ## Pe scurt (română)
 
-SDK-ul oficial Python pentru API-ul de date Satelit: cursurile BNM, carburanți, tarife, prețuri în magazine, legi, știri, companii, instanțe, filme și cinematografe. Fără dependențe (doar biblioteca standard), Python 3.9+, client sincron `Satelit` și asincron `AsyncSatelit`. Instalare: `pip install git+https://github.com/Satelit-Moldova/satelit-python`. Cheia (`sat_live_…`) se ia din [consolă](https://developer.satelit.md/en/console/) și se ține doar pe server. Fiecare apel întoarce `r.data`, `r.meta`, `r.rate`; erorile sunt `SatelitError` cu `status`, `code`, `message`, `docs`. Păstrați răspunsurile în cache (cursurile câteva ore, știrile 10-15 minute): un apel Movies costă 40 de credite. Afișați `meta["attribution"]` și „Date: Satelit (satelit.md)” lângă date.
+SDK-ul oficial Python pentru API-ul de date Satelit: cursurile BNM, carburanți, tarife, prețuri în magazine, legi, știri, companii, instanțe, filme și cinematografe. Fără dependențe (doar biblioteca standard), Python 3.10+, client sincron `Satelit` și asincron `AsyncSatelit`. Instalare: `pip install git+https://github.com/Satelit-Moldova/satelit-python`. Cheia (`sat_live_…`) se ia din [consolă](https://developer.satelit.md/en/console/) și se ține doar pe server. Fiecare apel întoarce `r.data`, `r.meta`, `r.rate`; erorile sunt `SatelitError` cu `status`, `code`, `message`, `docs`. Păstrați răspunsurile în cache (cursurile câteva ore, știrile 10-15 minute): un apel Movies costă 40 de credite. Afișați `meta["attribution"]` și „Date: Satelit (satelit.md)” lângă date.
 
 ## License
 
