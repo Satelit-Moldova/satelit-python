@@ -109,7 +109,7 @@ asyncio.run(main())
 
 ### Pages
 
-Paged lists carry `meta["page"]`. `paginate` walks them and yields the items; every page is a call and costs its credits, so bound it with `max_pages`:
+Paged lists carry `meta["page"]`. `paginate` walks them and yields the items. Every page is a call and costs its credits, so bound it with `max_pages`:
 
 ```python
 for tour in satelit.paginate(satelit.tours.list, country="Turcia", max_pages=3):
@@ -275,12 +275,12 @@ Every failure raises `SatelitError`:
 | Status | `code` | What to do |
 |---|---|---|
 | 401 | `auth_required`, `key_invalid` | check the key |
-| 402 | `plan_required` | the plan does not include this; see `choose` or the pricing page |
+| 402 | `plan_required` | the plan does not include this. See `choose` or the pricing page |
 | 403 | `not_available`, `account_suspended` | the product is closed, or the account is |
 | 404 | `not_found` | no such id |
 | 422 | `invalid` | fix `fields` |
 | 429 | `rate_limited` | retried for you after `Retry-After` (at most 3 times) |
-| 429 | `quota_exceeded` | out of credits this period: never retried; buy a pack or wait for the reset |
+| 429 | `quota_exceeded` | out of credits this period: never retried. Buy a pack or wait for the reset |
 | 429 | `export_running` | one export at a time per account |
 | 503 | `busy` | retried for you when `Retry-After` is given |
 
@@ -298,7 +298,7 @@ A `Retry-After` over 60 seconds is not waited for. More: [errors](https://develo
 
 ## Caching and credits
 
-A credit is charged only on a 2xx answer. Most calls cost 1 to 5 credits; **every Movies call costs 40** (`movies.title_full` 55), except `movies.genres` (0) and the keyless `movies.board`. Keep answers and reuse them; the sources do not change faster than this:
+A credit is charged only on a 2xx answer. Most calls cost 1 to 5 credits; **every Movies call costs 40** (`movies.title_full` 55), except `movies.genres` (0) and the keyless `movies.board`. Keep answers and reuse them. The sources do not change faster than this:
 
 | Data | Keep it for |
 |---|---|
@@ -309,7 +309,7 @@ A credit is charged only on a 2xx answer. Most calls cost 1 to 5 credits; **ever
 | cinema schedules | 1 to 3 h |
 | a film's or person's details | 24 h or more |
 
-The examples use a small file cache ([`examples/_cache.py`](examples/_cache.py)); in an app, use the cache you have (Django's cache, Redis, `functools.lru_cache` with a time bucket). Read `r.rate["credits_remaining"]` to watch the balance, or call `satelit.me()` (free).
+The examples use a small file cache ([`examples/_cache.py`](examples/_cache.py)). In an app, use the cache you have (Django's cache, Redis, `functools.lru_cache` with a time bucket). Read `r.rate["credits_remaining"]` to watch the balance, or call `satelit.me()` (free).
 
 **Attribution.** Wherever you show the data, show `meta["attribution"]` when it is not `None` (rates carry BNM's line `Sursa: Banca Națională a Moldovei, bnm.md, CC BY 4.0`, OpenStreetMap places their ODbL line) and a small "Data: Satelit (satelit.md)" link. Show the shop's name with every shop price.
 
@@ -369,7 +369,7 @@ CI runs the offline tests and ruff on Python 3.10, 3.11, 3.12 and 3.13; 3.10 and
 - **401 `auth_required`**: no key reached the API. Set `SATELIT_API_KEY` or pass `api_key`.
 - **402 `plan_required`** on `feed` or `export`: those need Business (feed) or Enterprise (export).
 - **429 `quota_exceeded`**: this period's credits are spent; `rate["credits_reset"]` says when they return.
-- **`timeout`**: the default is 10 s to connect and per read; raise `timeout` for heavy calls.
+- **`timeout`**: the default is 10 s to connect and per read. Raise `timeout` for heavy calls.
 - **`network_error` with a certificate message**: the machine's CA store is out of date (on macOS, run Python's `Install Certificates.command`).
 
 ## Links
@@ -378,7 +378,7 @@ CI runs the offline tests and ruff on Python 3.10, 3.11, 3.12 and 3.13; 3.10 and
 
 ## Pe scurt (română)
 
-SDK-ul oficial Python pentru API-ul de date Satelit: cursurile BNM, carburanți, tarife, prețuri în magazine, legi, știri, companii, instanțe, filme și cinematografe. Fără dependențe (doar biblioteca standard), Python 3.10+, client sincron `Satelit` și asincron `AsyncSatelit`. Instalare: `pip install git+https://github.com/Satelit-Moldova/satelit-python`. Cheia (`sat_live_…`) se ia din [consolă](https://developer.satelit.md/en/console/) și se ține doar pe server. Fiecare apel întoarce `r.data`, `r.meta`, `r.rate`; erorile sunt `SatelitError` cu `status`, `code`, `message`, `docs`. Păstrați răspunsurile în cache (cursurile câteva ore, știrile 10-15 minute): un apel Movies costă 40 de credite. Afișați `meta["attribution"]` și „Date: Satelit (satelit.md)” lângă date.
+SDK-ul oficial Python pentru API-ul de date Satelit: cursurile BNM, carburanți, tarife, prețuri în magazine, legi, știri, companii, instanțe, filme și cinematografe. Fără dependențe (doar biblioteca standard), Python 3.10+, client sincron `Satelit` și asincron `AsyncSatelit`. Instalare: `pip install git+https://github.com/Satelit-Moldova/satelit-python`. Cheia (`sat_live_…`) se ia din [consolă](https://developer.satelit.md/en/console/) și se ține doar pe server. Fiecare apel întoarce `r.data`, `r.meta`, `r.rate`. Erorile sunt `SatelitError` cu `status`, `code`, `message`, `docs`. Păstrați răspunsurile în cache (cursurile câteva ore, știrile 10-15 minute): un apel Movies costă 40 de credite. Afișați `meta["attribution"]` și „Date: Satelit (satelit.md)” lângă date.
 
 ## License
 
