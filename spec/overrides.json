@@ -1,0 +1,183 @@
+{
+ "_comment": "Local corrections to spec/openapi.json, applied by the generators and the schema tests. CinemaFilm: a film the catalogue did not match has id null and only the cinema's own fields (seen live on 19 Nov 2026).",
+ "schemas": {
+  "CinemaFilm": {
+   "type": "object",
+   "description": "A film the catalogue matched has its id; another keeps the cinema's own title and `id` null.",
+   "properties": {
+    "id": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^[msp][0-9]{1,10}$",
+     "description": "Satelit's id: `m` a film, `s` a series, `p` a person."
+    },
+    "kind": {
+     "type": "string",
+     "enum": [
+      "movie",
+      "series"
+     ]
+    },
+    "title": {
+     "type": "string"
+    },
+    "original_title": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "year": {
+     "type": [
+      "integer",
+      "null"
+     ]
+    },
+    "released": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "format": "date"
+    },
+    "language": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "rating": {
+     "type": [
+      "object",
+      "null"
+     ],
+     "properties": {
+      "value": {
+       "type": "number"
+      },
+      "votes": {
+       "type": [
+        "integer",
+        "null"
+       ]
+      }
+     },
+     "required": [
+      "value",
+      "votes"
+     ]
+    },
+    "overview": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "pictures": {
+     "type": [
+      "object",
+      "null"
+     ],
+     "properties": {
+      "poster": {
+       "type": "object",
+       "properties": {
+        "s": {
+         "type": "string",
+         "format": "uri"
+        },
+        "m": {
+         "type": "string",
+         "format": "uri"
+        },
+        "l": {
+         "type": "string",
+         "format": "uri"
+        }
+       },
+       "required": [
+        "s",
+        "m",
+        "l"
+       ]
+      },
+      "backdrop": {
+       "type": "object",
+       "properties": {
+        "m": {
+         "type": "string",
+         "format": "uri"
+        },
+        "w": {
+         "type": "string",
+         "format": "uri"
+        }
+       },
+       "required": [
+        "m",
+        "w"
+       ]
+      },
+      "photo": {
+       "type": "object",
+       "properties": {
+        "s": {
+         "type": "string",
+         "format": "uri"
+        },
+        "m": {
+         "type": "string",
+         "format": "uri"
+        },
+        "l": {
+         "type": "string",
+         "format": "uri"
+        }
+       },
+       "required": [
+        "s",
+        "m",
+        "l"
+       ]
+      }
+     }
+    },
+    "genres": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "role": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "In a person's work: the character or the job."
+    },
+    "listed_title": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "The title as the cinema lists it."
+    },
+    "sessions": {
+     "type": "array",
+     "items": {
+      "$ref": "#/components/schemas/CinemaSession"
+     }
+    }
+   },
+   "required": [
+    "id",
+    "kind",
+    "title",
+    "listed_title",
+    "sessions"
+   ]
+  }
+ }
+}

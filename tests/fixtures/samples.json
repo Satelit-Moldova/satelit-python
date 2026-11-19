@@ -1,0 +1,6134 @@
+{
+ "/me": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299960",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "597",
+   "x-ratelimit-reset": "3"
+  },
+  "body": {
+   "data": {
+    "plan": "pro",
+    "credits": {
+     "limit": 300000,
+     "used": 40,
+     "reset": "2026-12-19T16:41:51+02:00",
+     "plan": 300000,
+     "extra": 0
+    },
+    "rate": {
+     "per_minute": 600
+    },
+    "key": {
+     "name": "example",
+     "prefix": "sat_xxxxxxxx"
+    }
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": null,
+    "sources": [],
+    "attribution": null
+   }
+  }
+ },
+ "/rates": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299959",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "596",
+   "x-ratelimit-reset": "3"
+  },
+  "body": {
+   "data": [
+    {
+     "code": "EUR",
+     "name": "Euro",
+     "value": 20.1411,
+     "nominal": 1,
+     "date": "2026-11-19",
+     "change_7d_pct": -0.1,
+     "change_30d_pct": 0.2
+    },
+    {
+     "code": "USD",
+     "name": "Dolar SUA",
+     "value": 18.3744,
+     "nominal": 1,
+     "date": "2026-11-19",
+     "change_7d_pct": 1.5,
+     "change_30d_pct": 2.5
+    },
+    {
+     "code": "RON",
+     "name": "Leu românesc",
+     "value": 3.7671,
+     "nominal": 1,
+     "date": "2026-11-19",
+     "change_7d_pct": -0.1,
+     "change_30d_pct": -0.2
+    },
+    "... 2 more"
+   ],
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-19T16:36:34+02:00",
+    "sources": [
+     {
+      "name": "BNM",
+      "url": "https://www.bnm.md/ro/content/ratele-de-schimb",
+      "license": "CC BY 4.0"
+     }
+    ],
+    "attribution": "Sursa: Banca Națională a Moldovei, bnm.md, CC BY 4.0",
+    "notice": "Aceleași date sunt gratuite la bnm.md."
+   }
+  }
+ },
+ "/rates/history?code=EUR&days=30": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299958",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "595",
+   "x-ratelimit-reset": "3"
+  },
+  "body": {
+   "data": {
+    "code": "EUR",
+    "points": [
+     {
+      "date": "2026-10-20",
+      "value": 20.1053
+     },
+     {
+      "date": "2026-10-21",
+      "value": 20.126
+     },
+     {
+      "date": "2026-10-22",
+      "value": 20.1523
+     },
+     "... 28 more"
+    ]
+   },
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-19T13:00:14+02:00",
+    "sources": [
+     {
+      "name": "BNM",
+      "url": "https://www.bnm.md/ro/content/ratele-de-schimb",
+      "license": "CC BY 4.0"
+     }
+    ],
+    "attribution": "Sursa: Banca Națională a Moldovei, bnm.md, CC BY 4.0",
+    "notice": "Aceleași date sunt gratuite la bnm.md."
+   }
+  }
+ },
+ "/fuel": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299957",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "594",
+   "x-ratelimit-reset": "3"
+  },
+  "body": {
+   "data": {
+    "date": "2026-11-19",
+    "cap": {
+     "a95": 28.08,
+     "diesel": 33.46
+    },
+    "networks": [
+     {
+      "key": "lukoil",
+      "name": "Lukoil",
+      "url": "https://lukoil.md/ro/",
+      "stations": 103,
+      "date": "2026-11-19",
+      "stale": false,
+      "prices": {
+       "a95": 28.08,
+       "diesel": 33.46,
+       "lpg": 18.95
+      }
+     },
+     {
+      "key": "rompetrol",
+      "name": "Rompetrol",
+      "url": "https://www.rompetrol.md/",
+      "stations": 95,
+      "date": "2026-11-19",
+      "stale": false,
+      "prices": {
+       "a95": 28.05,
+       "diesel": 33.42,
+       "lpg": 19.0
+      }
+     },
+     {
+      "key": "vento",
+      "name": "Vento",
+      "url": "https://vento-moldova.md/",
+      "stations": 89,
+      "date": "2026-11-19",
+      "stale": false,
+      "prices": {
+       "a95": 28.04,
+       "diesel": 33.44,
+       "lpg": 19.19
+      }
+     },
+     "... 79 more"
+    ],
+    "cheapest": {
+     "a95": "tlx",
+     "diesel": "tlx",
+     "lpg": "tlx"
+    },
+    "range": {
+     "a95": {
+      "min": 27.9,
+      "max": 28.8,
+      "networks": 20
+     },
+     "diesel": {
+      "min": 33.25,
+      "max": 34.14,
+      "networks": 20
+     },
+     "lpg": {
+      "min": 18.6,
+      "max": 19.2,
+      "networks": 17
+     }
+    }
+   },
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-19T16:36:34+02:00",
+    "sources": [
+     {
+      "name": "ANRE",
+      "url": "https://anre.md",
+      "license": "Public data of ANRE"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/fuel/stations?network=petrom": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "5",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299952",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "593",
+   "x-ratelimit-reset": "3"
+  },
+  "body": {
+   "data": [
+    {
+     "id": "petrom:1002600045798-p0116",
+     "network": "petrom",
+     "name": "P0116",
+     "address": "km 32+107, Țînțăreni",
+     "raion": "Anenii Noi",
+     "lat": 46.896483,
+     "lon": 29.150785,
+     "date": "2026-11-19",
+     "prices": {
+      "a95": 28.08,
+      "diesel": 33.46,
+      "lpg": null
+     }
+    },
+    {
+     "id": "petrom:1002600045798-p0116-1",
+     "network": "petrom",
+     "name": "P0116-1",
+     "address": "km 32+126, Țînțăreni",
+     "raion": "Anenii Noi",
+     "lat": 46.897014,
+     "lon": 29.151138,
+     "date": "2026-11-19",
+     "prices": {
+      "a95": 28.08,
+      "diesel": 33.46,
+      "lpg": null
+     }
+    },
+    {
+     "id": "petrom:1002600045798-p0059",
+     "network": "petrom",
+     "name": "P0059",
+     "address": "str. Voczalinaia 81/4, Basarabeasca",
+     "raion": "Basarabeasca",
+     "lat": 46.326925,
+     "lon": 28.982693,
+     "date": "2026-11-19",
+     "prices": {
+      "a95": 28.08,
+      "diesel": 33.46,
+      "lpg": null
+     }
+    },
+    "... 62 more"
+   ],
+   "meta": {
+    "credits": 5,
+    "updated_at": "2026-11-19T16:36:34+02:00",
+    "sources": [
+     {
+      "name": "ANRE",
+      "url": "https://anre.md",
+      "license": "Public data of ANRE"
+     }
+    ],
+    "attribution": null,
+    "page": {
+     "page": 1,
+     "per": 100,
+     "total": 65,
+     "pages": 1
+    }
+   }
+  }
+ },
+ "/fuel/history?fuel=a95&days=30": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299950",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "592",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": {
+    "fuel": "a95",
+    "network": null,
+    "points": [
+     {
+      "date": "2026-10-30",
+      "value": 31.67
+     },
+     {
+      "date": "2026-10-31",
+      "value": 31.51
+     },
+     {
+      "date": "2026-11-01",
+      "value": 31.51
+     },
+     "... 18 more"
+    ]
+   },
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T13:00:14+02:00",
+    "sources": [
+     {
+      "name": "ANRE",
+      "url": "https://anre.md",
+      "license": "Public data of ANRE"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/tariffs": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299949",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "591",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": [
+    {
+     "key": "gas",
+     "label": "Gaz natural pentru casă",
+     "provider": "Energocom",
+     "region": "Toată țara",
+     "unit": "lei/m³",
+     "value": 24.202,
+     "valid_from": "2026-10-01",
+     "decision": "HCA ANRE nr. 578 din 28.09.2026",
+     "parts": null,
+     "vat": false
+    },
+    {
+     "key": "electricity",
+     "label": "Energie electrică, centru și sud",
+     "provider": "Premier Energy",
+     "region": "Chișinău, centru și sud",
+     "unit": "lei/kWh",
+     "value": 3.56,
+     "valid_from": "2026-04-02",
+     "decision": "HCA ANRE nr. 222 din 31 martie 2026",
+     "parts": null,
+     "vat": false
+    },
+    {
+     "key": "electricity_north",
+     "label": "Energie electrică, nord",
+     "provider": "FEE Nord",
+     "region": "Bălți și nordul",
+     "unit": "lei/kWh",
+     "value": 3.95,
+     "valid_from": "2026-04-02",
+     "decision": "HCA ANRE nr. 224 din 31 martie 2026",
+     "parts": null,
+     "vat": false
+    },
+    "... 4 more"
+   ],
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-19T16:36:34+02:00",
+    "sources": [
+     {
+      "name": "ANRE",
+      "url": "https://anre.md",
+      "license": "Public data of ANRE"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/indexes/basket": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299947",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "590",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": {
+    "items": [
+     {
+      "product": "Lapte",
+      "qty": 4,
+      "unit": "l"
+     },
+     {
+      "product": "Ouă",
+      "qty": 20,
+      "unit": "buc"
+     },
+     {
+      "product": "Pâine",
+      "qty": 4,
+      "unit": "buc"
+     },
+     "... 15 more"
+    ],
+    "points": [
+     {
+      "date": "2026-10-28",
+      "total": 712.45,
+      "cheapest_total": 534.36
+     },
+     {
+      "date": "2026-10-29",
+      "total": 693.76,
+      "cheapest_total": 540.9
+     },
+     {
+      "date": "2026-10-30",
+      "total": 681.49,
+      "cheapest_total": 585.33
+     },
+     "... 20 more"
+    ],
+    "change_mom": null,
+    "change_yoy": null
+   },
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T14:50:08+02:00",
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/indexes/moves?days=30": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299945",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "589",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": {
+    "from": "2026-10-28",
+    "to": "2026-11-19",
+    "compared": 3001,
+    "up": 427,
+    "down": 301,
+    "same": 2273,
+    "change_pct": 0.59,
+    "groups": [
+     {
+      "key": "home",
+      "label": "Casă și mobilă",
+      "compared": 91,
+      "up": 3,
+      "down": 38,
+      "same": 50,
+      "change_pct": -5.26
+     },
+     {
+      "key": "sport",
+      "label": "Sport și timp liber",
+      "compared": 20,
+      "up": 0,
+      "down": 4,
+      "same": 16,
+      "change_pct": -2.81
+     },
+     {
+      "key": "beauty",
+      "label": "Cosmetice și igienă",
+      "compared": 84,
+      "up": 5,
+      "down": 6,
+      "same": 73,
+      "change_pct": -1.32
+     },
+     "... 14 more"
+    ]
+   },
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T14:50:32+02:00",
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/law/acts": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299943",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "588",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": [
+    {
+     "id": 110556,
+     "slug": "ordin-477-o-2026-cu-privire-la-modificarea-normelor-tehnice-privind-cerintele-in-materie-de-date-pentru-completarea-declaratiei-vamale-aprobate-prin-o",
+     "type": "ordin",
+     "type_label": "Ordin",
+     "type_raw": "Ordin",
+     "number": "477-O",
+     "code": null,
+     "title": "cu privire la modificarea Normelor tehnice privind cerințele în materie de date pentru completarea declarației vamale, aprobate prin Ordinul directorului Serviciului Vamal nr. 563-O/2023",
+     "title_ru": null,
+     "heading": "Ordinul Serviciului Vamal nr. 477-O cu privire la modificarea Normelor tehnice privind cerințele în materie de date pentru completarea declarației vamale, aprobate prin Ordinul directorului Serviciului Vamal nr. 563-O/2023",
+     "heading_lang": "ro",
+     "issuer": "Serviciului Vamal al Republicii Moldova",
+     "issuer_name": "Serviciul Vamal",
+     "issuer_key": "serviciul-vamal",
+     "subject": "Modificarea Normelor tehnice privind cerințele în materie de date pentru completarea declarației vamale, aprobate prin Ordinul directorului Serviciului Vamal nr. 563-O/2023",
+     "subject_lang": "ro",
+     "topic": "taxes",
+     "kind": "amends",
+     "targets": [
+      {
+       "type": "ordin",
+       "type_label": "Ordin",
+       "number": "563-O",
+       "year": 2023
+      }
+     ],
+     "adopted_on": "2026-11-13",
+     "published_on": "2026-11-19",
+     "in_force_on": null,
+     "repealed_on": null,
+     "status": "published",
+     "important": true,
+     "mo_ref": "MO 575-576/19.11.2026 art. 967a",
+     "url": "https://monitorul.gov.md/ro/monitor/3379",
+     "has_text": false,
+     "has_text_ru": false,
+     "topics": [],
+     "headline": null,
+     "summary": null
+    },
+    {
+     "id": 110555,
+     "slug": "hotarare-63-12-2026-privind-aprobarea-prospectului-ofertei-de-preluare-obligatorie-a-actiunilor-emise-de-societatea-pe-actiuni-uzina-mecanica-din-leov",
+     "type": "hotarare",
+     "type_label": "Hotărâre",
+     "type_raw": "Hotărâre",
+     "number": "63/12",
+     "code": null,
+     "title": "privind aprobarea prospectului ofertei de preluare obligatorie a acțiunilor emise de Societatea pe acțiuni „UZINA MECANICĂ DIN LEOVA”",
+     "title_ru": "об утверждении проспекта обязательного предложения о поглощении акций, выпущенных акционерным обществом „UZINA MECANICĂ DIN LEOVA”",
+     "heading": "Hotărârea CNPF nr. 63/12 privind aprobarea prospectului ofertei de preluare obligatorie a acțiunilor emise de Societatea pe acțiuni „UZINA MECANICĂ DIN LEOVA”",
+     "heading_lang": "ro",
+     "issuer": "Comisiei Naţionale a Pieţei Financiare",
+     "issuer_name": "Comisia Națională a Pieței Financiare",
+     "issuer_key": "comisia-nationala-a-pietei-financiare",
+     "subject": "Aprobarea prospectului ofertei de preluare obligatorie a acțiunilor emise de Societatea pe acțiuni „UZINA MECANICĂ DIN LEOVA”",
+     "subject_lang": "ro",
+     "topic": "other",
+     "kind": null,
+     "targets": [],
+     "adopted_on": "2026-11-17",
+     "published_on": "2026-11-19",
+     "in_force_on": null,
+     "repealed_on": null,
+     "status": "published",
+     "important": false,
+     "mo_ref": "MO 575-576/19.11.2026 art. 967",
+     "url": "https://monitorul.gov.md/ro/monitor/3379",
+     "has_text": false,
+     "has_text_ru": false,
+     "topics": [],
+     "headline": null,
+     "summary": null
+    },
+    {
+     "id": 110554,
+     "slug": "hotarare-63-11-2026-privind-aprobarea-prospectului-ofertei-de-preluare-obligatorie-a-actiunilor-emise-de-societatea-pe-actiuni-macon",
+     "type": "hotarare",
+     "type_label": "Hotărâre",
+     "type_raw": "Hotărâre",
+     "number": "63/11",
+     "code": null,
+     "title": "privind aprobarea prospectului ofertei de preluare obligatorie a acțiunilor emise de Societatea pe acțiuni „MACON”",
+     "title_ru": "об утверждении проспекта обязательного предложения о поглощении акций, выпущенных акционерным обществом „MACON”",
+     "heading": "Hotărârea CNPF nr. 63/11 privind aprobarea prospectului ofertei de preluare obligatorie a acțiunilor emise de Societatea pe acțiuni „MACON”",
+     "heading_lang": "ro",
+     "issuer": "Comisiei Naţionale a Pieţei Financiare",
+     "issuer_name": "Comisia Națională a Pieței Financiare",
+     "issuer_key": "comisia-nationala-a-pietei-financiare",
+     "subject": "Aprobarea prospectului ofertei de preluare obligatorie a acțiunilor emise de Societatea pe acțiuni „MACON”",
+     "subject_lang": "ro",
+     "topic": "other",
+     "kind": null,
+     "targets": [],
+     "adopted_on": "2026-11-17",
+     "published_on": "2026-11-19",
+     "in_force_on": null,
+     "repealed_on": null,
+     "status": "published",
+     "important": false,
+     "mo_ref": "MO 575-576/19.11.2026 art. 966",
+     "url": "https://monitorul.gov.md/ro/monitor/3379",
+     "has_text": false,
+     "has_text_ru": false,
+     "topics": [],
+     "headline": null,
+     "summary": null
+    },
+    "... 17 more"
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Monitorul Oficial",
+      "url": "https://monitorul.gov.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null,
+    "page": {
+     "page": 1,
+     "per": 20,
+     "total": 110550,
+     "pages": 5528
+    }
+   }
+  }
+ },
+ "/law/digests": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299941",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "587",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": [
+    {
+     "date": "2026-11-19",
+     "acts": 28,
+     "title": "Noutăți legislative: 19 noiembrie 2026"
+    },
+    {
+     "date": "2026-11-18",
+     "acts": 3,
+     "title": "Noutăți legislative: 18 noiembrie 2026"
+    },
+    {
+     "date": "2026-11-17",
+     "acts": 20,
+     "title": "Noutăți legislative: 17 noiembrie 2026"
+    },
+    "... 1 more"
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T08:30:26+02:00",
+    "sources": [
+     {
+      "name": "Monitorul Oficial",
+      "url": "https://monitorul.gov.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/news?per=3": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299939",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "586",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": [
+    {
+     "id": "n_2e63dae6c2a47fc06df6",
+     "kind": "brief",
+     "category": {
+      "key": "politics",
+      "label": "Politică"
+     },
+     "title": "PAS va anunța oficial pe 29 noiembrie candidatul pentru Primăria Chișinău, spune Igor Grosu",
+     "dek": null,
+     "gravity": 13,
+     "band": "low",
+     "reach": 0,
+     "region": {
+      "key": "chisinau",
+      "label": "Chișinău"
+     },
+     "regions": [
+      "chisinau"
+     ],
+     "slot": {
+      "key": "noon",
+      "label": "La prânz"
+     },
+     "due_at": "2026-11-19T11:00:00+02:00",
+     "published_at": "2026-11-19T09:03:00+02:00",
+     "sources": [
+      {
+       "name": "Stiri.md",
+       "url": "https://stiri.md/article/politica/pas-si-a-ales-candidatul-la-primaria-chisinau-grosu-dezvaluie-data-anuntului-oficial"
+      },
+      {
+       "name": "Moldpres",
+       "url": "https://www.moldpres.md/rom/societate/igor-grosu-spune-ca-pas-este-aproape-decis-asupra-candidatului-pentru-primaria-chisinau-insa-urmeaza-sa-anunte-oficial-pe-29-noiembrie"
+      }
+     ],
+     "sources_count": 2,
+     "image": null,
+     "reaction": {
+      "score": 0.0,
+      "label": null,
+      "comments": 3
+     },
+     "event_id": "e_dd4c9e0f949322035b9b"
+    },
+    {
+     "id": "n_f64609d7d2b7dbfee8c6",
+     "kind": "brief",
+     "category": {
+      "key": "economy",
+      "label": "Economie și prețuri"
+     },
+     "title": "Guvernul a aprobat bugetul pe 2027: deficit de aproape 20 de miliarde de lei și mai multe fonduri pentru infrastructură și apărare",
+     "dek": null,
+     "gravity": 51,
+     "band": "high",
+     "reach": 3,
+     "region": {
+      "key": "global",
+      "label": "Toată țara"
+     },
+     "regions": [
+      "global"
+     ],
+     "slot": {
+      "key": "noon",
+      "label": "La prânz"
+     },
+     "due_at": "2026-11-19T11:00:00+02:00",
+     "published_at": "2026-11-19T09:01:00+02:00",
+     "sources": [
+      {
+       "name": "TV8",
+       "url": "https://tv8.md/ru/2026/11/19/video-pochti-20-mlrd-leev-defitsita-i-novie-raskhodi-kakim-budet-byudzhet-moldovi-na-2027-god/312893"
+      }
+     ],
+     "sources_count": 1,
+     "image": null,
+     "reaction": null,
+     "event_id": "e_b2eb5387acaee1c87416"
+    },
+    {
+     "id": "n_77c2cff181735252b57a",
+     "kind": "brief",
+     "category": {
+      "key": "education",
+      "label": "Educație"
+     },
+     "title": "Ministerul Educației pregătește schimbări în formarea cadrelor didactice",
+     "dek": null,
+     "gravity": 24,
+     "band": "low",
+     "reach": 1,
+     "region": {
+      "key": "global",
+      "label": "Toată țara"
+     },
+     "regions": [
+      "global"
+     ],
+     "slot": {
+      "key": "morning",
+      "label": "Dimineața"
+     },
+     "due_at": "2026-11-19T08:53:00+02:00",
+     "published_at": "2026-11-19T08:53:00+02:00",
+     "sources": [
+      {
+       "name": "Stiri.md",
+       "url": "https://stiri.md/article/social/reforma-in-formarea-cadrelor-didactice-ce-schimbari-pregateste-ministerul-educatiei"
+      }
+     ],
+     "sources_count": 1,
+     "image": null,
+     "reaction": null,
+     "event_id": "e_ddfbaf112cc4cf33512c"
+    }
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T10:06:48+02:00",
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null,
+    "page": {
+     "page": 1,
+     "per": 3,
+     "total": 7146,
+     "pages": 2382
+    }
+   }
+  }
+ },
+ "/news/now?per=3": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299937",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "585",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": [
+    {
+     "id": "n_ca56f20bdf20e0ba3802",
+     "kind": "article",
+     "category": {
+      "key": "economy",
+      "label": "Economie și prețuri"
+     },
+     "title": "Prețul de achiziție al energiei electrice a crescut la 195 de euro pe MWh",
+     "dek": "Prețul mediu de achiziție a energiei a ajuns la 195 de euro pe MWh în octombrie, față de 159 de euro în septembrie.",
+     "gravity": 74,
+     "band": "high",
+     "reach": 3,
+     "region": {
+      "key": "global",
+      "label": "Toată țara"
+     },
+     "regions": [
+      "global"
+     ],
+     "slot": {
+      "key": "noon",
+      "label": "La prânz"
+     },
+     "due_at": "2026-11-19T11:00:00+02:00",
+     "published_at": "2026-11-19T00:09:52+02:00",
+     "sources": [
+      {
+       "name": "Point.md",
+       "url": "https://point.md/ru/novosti/ekonomika/zakupochnaia-tsena-elektroenergii-dlia-moldovy-vyrosla-do-195-evro-za-mvt-ch/"
+      }
+     ],
+     "sources_count": 1,
+     "image": null,
+     "reaction": {
+      "score": -0.833,
+      "label": "negative",
+      "comments": 7
+     },
+     "event_id": "e_0b4a63664adae9c48b9f"
+    },
+    {
+     "id": "n_e49be1d914e6f0cec16e",
+     "kind": "article",
+     "category": {
+      "key": "economy",
+      "label": "Economie și prețuri"
+     },
+     "title": "Comisia Europeană prevede inflație de 8,2% în Moldova în 2026",
+     "dek": "Comisia Europeană estimează că inflația din Moldova va ajunge la 8,2% în 2026 și la 6,9% în 2027.",
+     "gravity": 70,
+     "band": "high",
+     "reach": 3,
+     "region": {
+      "key": "global",
+      "label": "Toată țara"
+     },
+     "regions": [
+      "global"
+     ],
+     "slot": {
+      "key": "noon",
+      "label": "La prânz"
+     },
+     "due_at": "2026-11-19T11:00:00+02:00",
+     "published_at": "2026-11-19T00:12:04+02:00",
+     "sources": [
+      {
+       "name": "Știri pe surse",
+       "url": "https://stiripesurse.md/noua-prognoza-a-comisiei-europene-pentru-moldova-noi-scumpiri-si-in-2027/"
+      }
+     ],
+     "sources_count": 1,
+     "image": null,
+     "reaction": null,
+     "event_id": "e_05735d3885424bc86346"
+    },
+    {
+     "id": "n_9809cdd9bbf5eb9f5fcc",
+     "kind": "article",
+     "category": {
+      "key": "economy",
+      "label": "Economie și prețuri"
+     },
+     "title": "Deputații spun că pâinea costă între 7 și 40 de lei",
+     "dek": "Deputații chestionați de Ea spun că prețul pâinii variază între 7 și 40 de lei, iar mulți cumpără pâine de 10 până la 20 de lei.",
+     "gravity": 67,
+     "band": "high",
+     "reach": 3,
+     "region": {
+      "key": "global",
+      "label": "Toată țara"
+     },
+     "regions": [
+      "global"
+     ],
+     "slot": {
+      "key": "noon",
+      "label": "La prânz"
+     },
+     "due_at": "2026-11-19T11:00:00+02:00",
+     "published_at": "2026-11-19T00:10:34+02:00",
+     "sources": [
+      {
+       "name": "Ea.md",
+       "url": "https://ea.md/cat-platesc-deputatii-pentru-paine-si-ce-solutii-propun-pentru-a-i-proteja-pe-cei-vulnerabili-de-scumpiri/"
+      }
+     ],
+     "sources_count": 1,
+     "image": null,
+     "reaction": null,
+     "event_id": "e_62916cbbeadcfada513c"
+    }
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T00:12:04+02:00",
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null,
+    "slot": {
+     "key": "noon",
+     "label": "La prânz"
+    },
+    "region": {
+     "key": "global",
+     "label": "Toată țara"
+    }
+   }
+  }
+ },
+ "/news/categories": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299936",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "584",
+   "x-ratelimit-reset": "2"
+  },
+  "body": {
+   "data": [
+    {
+     "key": "politics",
+     "label": "Politică"
+    },
+    {
+     "key": "economy",
+     "label": "Economie și prețuri"
+    },
+    {
+     "key": "society",
+     "label": "Societate"
+    },
+    "... 7 more"
+   ],
+   "meta": {
+    "credits": 1,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/news/regions": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299935",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "583",
+   "x-ratelimit-reset": "1"
+  },
+  "body": {
+   "data": {
+    "regions": [
+     {
+      "key": "global",
+      "label": "Toată țara",
+      "parent": null
+     },
+     {
+      "key": "chisinau",
+      "label": "Chișinău",
+      "parent": null
+     },
+     {
+      "key": "balti",
+      "label": "Bălți",
+      "parent": "nord"
+     },
+     "... 6 more"
+    ],
+    "slots": [
+     {
+      "key": "morning",
+      "label": "Dimineața",
+      "from": "06:00",
+      "to": "11:00"
+     },
+     {
+      "key": "noon",
+      "label": "La prânz",
+      "from": "11:00",
+      "to": "17:00"
+     },
+     {
+      "key": "evening",
+      "label": "Seara",
+      "from": "17:00",
+      "to": "24:00"
+     }
+    ]
+   },
+   "meta": {
+    "credits": 1,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/places?kind=shop&city=chisinau": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299933",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "582",
+   "x-ratelimit-reset": "1"
+  },
+  "body": {
+   "data": [
+    {
+     "id": "shop:osm:n10011326172",
+     "kind": "shop",
+     "name": "Alimentară",
+     "chain": null,
+     "category": "convenience",
+     "city": "chisinau",
+     "address": "str. Salcâmilor",
+     "lat": 46.97718,
+     "lon": 28.897,
+     "phone": null,
+     "website": null,
+     "opening_hours": null,
+     "updated_at": "2026-10-31T22:46:21+02:00"
+    },
+    {
+     "id": "shop:osm:n10011451515",
+     "kind": "shop",
+     "name": "Petrom",
+     "chain": "petrom",
+     "category": "convenience",
+     "city": "chisinau",
+     "address": "str. Pădurii 25",
+     "lat": 46.97899,
+     "lon": 28.89101,
+     "phone": null,
+     "website": null,
+     "opening_hours": null,
+     "updated_at": "2026-10-31T22:46:21+02:00"
+    },
+    {
+     "id": "shop:osm:n10012700117",
+     "kind": "shop",
+     "name": "Keks",
+     "chain": null,
+     "category": "convenience",
+     "city": "chisinau",
+     "address": "str. Ismail 84",
+     "lat": 47.01628,
+     "lon": 28.84726,
+     "phone": null,
+     "website": null,
+     "opening_hours": null,
+     "updated_at": "2026-10-31T22:46:21+02:00"
+    },
+    "... 97 more"
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-09T04:00:54+02:00",
+    "sources": [
+     {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0, © OpenStreetMap contributors",
+      "download": "https://api.satelit.md/downloads/places-osm.ndjson.gz"
+     }
+    ],
+    "attribution": "© OpenStreetMap contributors, ODbL",
+    "page": {
+     "page": 1,
+     "per": 100,
+     "total": 2756,
+     "pages": 28
+    }
+   }
+  }
+ },
+ "/recipes": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299931",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "581",
+   "x-ratelimit-reset": "1"
+  },
+  "body": {
+   "data": [
+    {
+     "slug": "ardei-umpluti",
+     "title": "Ardei umpluți",
+     "servings": 4,
+     "time_min": 70,
+     "tags": [
+      "traditional"
+     ],
+     "cost_today": 88.28,
+     "cost_per_serving": 22.07
+    },
+    {
+     "slug": "bors-de-post-cu-fasole",
+     "title": "Borș de post cu fasole",
+     "servings": 6,
+     "time_min": 90,
+     "tags": [
+      "traditional",
+      "vegetarian",
+      "soup",
+      "... 1 more"
+     ],
+     "cost_today": 17.91,
+     "cost_per_serving": 2.98
+    },
+    {
+     "slug": "bors-rosu-cu-carne-de-vita",
+     "title": "Borș roșu cu carne de vită",
+     "servings": 6,
+     "time_min": 100,
+     "tags": [
+      "traditional",
+      "soup"
+     ],
+     "cost_today": 76.84,
+     "cost_per_serving": 12.81
+    },
+    "... 67 more"
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T14:50:36+02:00",
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/prices/stores": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299930",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "580",
+   "x-ratelimit-reset": "1"
+  },
+  "body": {
+   "data": [
+    {
+     "key": "pandashop",
+     "name": "PandaShop",
+     "domain": "pandashop.md",
+     "kind": "electronics",
+     "products": 404986,
+     "updated_at": "2026-11-19T14:22:49+02:00"
+    },
+    {
+     "key": "smart",
+     "name": "Smart",
+     "domain": "www.smart.md",
+     "kind": "electronics",
+     "products": 207382,
+     "updated_at": "2026-11-19T14:23:05+02:00"
+    },
+    {
+     "key": "smadshop",
+     "name": "SmadShop",
+     "domain": "smadshop.md",
+     "kind": "general",
+     "products": 124468,
+     "updated_at": "2026-11-19T03:34:28+02:00"
+    },
+    "... 85 more"
+   ],
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-19T14:50:37+02:00",
+    "sources": [
+     {
+      "name": "Agroteh",
+      "url": "https://agroteh.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Agrotop",
+      "url": "https://agrotop.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "AlcoMarket",
+      "url": "https://alcomarket.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     "... 85 more"
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/prices/search?q=lapte": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "3",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299927",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "579",
+   "x-ratelimit-reset": "1"
+  },
+  "body": {
+   "data": [
+    {
+     "id": 3487,
+     "slug": "lapte-casuta-mea-2-5-1l",
+     "name": "Lapte Casuta Mea 2.5% 1 l",
+     "brand": "Casuta Mea",
+     "capacity": "1 l",
+     "category": "dairy_eggs",
+     "min_price": 15.99,
+     "median_price": 18.99,
+     "unit_min_price": 15.99,
+     "price_unit": "l",
+     "stores": 4,
+     "in_stock_stores": 3,
+     "updated_at": "2026-11-19T16:31:33+02:00"
+    },
+    {
+     "id": 217,
+     "slug": "lapte-jlc-2-5-1l",
+     "name": "Lapte JLC 2.5% 1 l",
+     "brand": "JLC",
+     "capacity": "1 l",
+     "category": "dairy_eggs",
+     "min_price": 16.99,
+     "median_price": 18.02,
+     "unit_min_price": 16.99,
+     "price_unit": "l",
+     "stores": 4,
+     "in_stock_stores": 4,
+     "updated_at": "2026-11-19T16:31:33+02:00"
+    },
+    {
+     "id": 127,
+     "slug": "lapte-prodlacta-ultrapasterizat-3-5-1l",
+     "name": "Lapte Prodlacta ultrapasterizat 3.5% 1 l",
+     "brand": "Prodlacta",
+     "capacity": "1 l",
+     "category": "dairy_eggs",
+     "min_price": 29.99,
+     "median_price": 34.8,
+     "unit_min_price": 29.99,
+     "price_unit": "l",
+     "stores": 4,
+     "in_stock_stores": 3,
+     "updated_at": "2026-11-19T01:01:42+02:00"
+    },
+    "... 17 more"
+   ],
+   "meta": {
+    "credits": 3,
+    "updated_at": "2026-11-19T16:31:33+02:00",
+    "sources": [
+     {
+      "name": "Baby Boom",
+      "url": "https://www.baby-boom.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Bonus",
+      "url": "https://bonus.zakaz.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Family Market",
+      "url": "https://familymarket.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     "... 8 more"
+    ],
+    "attribution": null,
+    "page": {
+     "page": 1,
+     "per": 20,
+     "total": 100,
+     "pages": 5
+    }
+   }
+  }
+ },
+ "/prices/groups": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299925",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "578",
+   "x-ratelimit-reset": "1"
+  },
+  "body": {
+   "data": [
+    {
+     "id": "lapte",
+     "name": "Lapte",
+     "unit": "l",
+     "min_price": 14.49,
+     "median_price": 25.99,
+     "unit_min_price": 14.49,
+     "price_unit": "l",
+     "stores": 7
+    },
+    {
+     "id": "chefir",
+     "name": "Chefir",
+     "unit": "l",
+     "min_price": 9.95,
+     "median_price": 20.75,
+     "unit_min_price": 19.98,
+     "price_unit": "l",
+     "stores": 5
+    },
+    {
+     "id": "airan",
+     "name": "Airan și lapte bătut",
+     "unit": "l",
+     "min_price": 9.99,
+     "median_price": 13.55,
+     "unit_min_price": 22.26,
+     "price_unit": "l",
+     "stores": 4
+    },
+    "... 176 more"
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Agroteh",
+      "url": "https://agroteh.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Agrotop",
+      "url": "https://agrotop.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "AlcoMarket",
+      "url": "https://alcomarket.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     "... 85 more"
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/deals": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "5",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299920",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "599",
+   "x-ratelimit-reset": "61"
+  },
+  "body": {
+   "data": [
+    {
+     "name": "Apă minerală Мтаби 1.25 l",
+     "brand": "Мтаби",
+     "capacity": "1.25 l",
+     "category": "drinks",
+     "store": {
+      "key": "nr1",
+      "name": "Nr1"
+     },
+     "price": 19.1,
+     "old_price": 44.2,
+     "discount_pct": 57,
+     "save": 25.1,
+     "unit_price": 15.28,
+     "unit": "l",
+     "stores": 1,
+     "url": "https://nr1.md/ro/booklets/?produs=apa-minerala-mtabi-1250g-2f2d912b"
+    },
+    {
+     "name": "Înghețată cu arahide cacao 20% Snickers 66 g",
+     "brand": "Snickers",
+     "capacity": "66 g",
+     "category": "sweets_snacks",
+     "store": {
+      "key": "nr1",
+      "name": "Nr1"
+     },
+     "price": 16.8,
+     "old_price": 39.0,
+     "discount_pct": 57,
+     "save": 22.2,
+     "unit_price": 254.55,
+     "unit": "kg",
+     "stores": 1,
+     "url": "https://nr1.md/ro/booklets/?produs=20-arahide-cacao-inghetata-snicers-66g-ab67e1ff"
+    },
+    {
+     "name": "Ciocolata Pobeda cu lapte 30% cacao 220 g",
+     "brand": "Pobeda",
+     "capacity": "220 g",
+     "category": "sweets_snacks",
+     "store": {
+      "key": "local",
+      "name": "Local"
+     },
+     "price": 39.99,
+     "old_price": 89.99,
+     "discount_pct": 56,
+     "save": 50.0,
+     "unit_price": 181.77,
+     "unit": "kg",
+     "stores": 2,
+     "url": "https://mylocal.md/revista?produs=cacao-ciocolata-lapte-pobeda-220g-3991478b"
+    },
+    "... 57 more"
+   ],
+   "meta": {
+    "credits": 5,
+    "updated_at": "2026-11-19T14:50:39+02:00",
+    "sources": [
+     {
+      "name": "Kaufland",
+      "url": "https://www.kaufland.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Linella",
+      "url": "https://linella.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Local",
+      "url": "https://mylocal.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     "... 4 more"
+    ],
+    "attribution": null,
+    "page": {
+     "page": 1,
+     "per": 60,
+     "total": 300,
+     "pages": 5
+    }
+   }
+  }
+ },
+ "/tours/countries": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299919",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "598",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": [
+    {
+     "country": "Egipt",
+     "offers": 7173,
+     "min_price_mdl": 7525.65,
+     "min_price_pp_mdl": 5548.4,
+     "agencies": 4
+    },
+    {
+     "country": "Turcia",
+     "offers": 1599,
+     "min_price_mdl": 5245.76,
+     "min_price_pp_mdl": 5245.76,
+     "agencies": 3
+    },
+    {
+     "country": "Grecia",
+     "offers": 1438,
+     "min_price_mdl": 3914.14,
+     "min_price_pp_mdl": 3611.51,
+     "agencies": 3
+    },
+    "... 18 more"
+   ],
+   "meta": {
+    "credits": 1,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Admiral Travel",
+      "url": "https://admiral.travel",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "Aviatur",
+      "url": "https://aviatur.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "Join UP!",
+      "url": "https://joinup.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     "... 2 more"
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/tours?country=Turcia": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "3",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299916",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "597",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": [
+    {
+     "id": 36246,
+     "agency": "Admiral Travel",
+     "title": "Constantinopolis Hotel",
+     "country": "Turcia",
+     "resort": "Istanbul",
+     "hotel": "Constantinopolis Hotel",
+     "stars": 3,
+     "board": null,
+     "room": "economy double",
+     "nights": 3,
+     "date_from": "2026-12-04",
+     "adults": 2,
+     "price": 260.0,
+     "currency": "EUR",
+     "price_mdl": 5245.76,
+     "price_per": "person",
+     "price_pp_mdl": 5245.76,
+     "departure": "RMO",
+     "transport": "flight",
+     "url": "https://admiral.travel/ro/countries/turcia/istanbul/constantinopolis-hotel?item_id=483",
+     "hot": false,
+     "last_seen": "2026-11-19T14:55:31+02:00"
+    },
+    {
+     "id": 34964,
+     "agency": "Admiral Travel",
+     "title": "Erguvan Hotel",
+     "country": "Turcia",
+     "resort": "Istanbul",
+     "hotel": "Erguvan Hotel",
+     "stars": 4,
+     "board": null,
+     "room": "Economy Double Room, 1-Double Bed(s)",
+     "nights": 2,
+     "date_from": "2026-11-24",
+     "adults": 2,
+     "price": 263.0,
+     "currency": "EUR",
+     "price_mdl": 5306.29,
+     "price_per": "person",
+     "price_pp_mdl": 5306.29,
+     "departure": "RMO",
+     "transport": "flight",
+     "url": "https://admiral.travel/ro/countries/turcia/istanbul/erguvan-hotel?item_id=2190",
+     "hot": false,
+     "last_seen": "2026-11-19T14:55:31+02:00"
+    },
+    {
+     "id": 36247,
+     "agency": "Admiral Travel",
+     "title": "Hotel Aldem",
+     "country": "Turcia",
+     "resort": "Istanbul",
+     "hotel": "Hotel Aldem",
+     "stars": 3,
+     "board": null,
+     "room": "Economy Room, 1 Double Bed (1 Double Bed)",
+     "nights": 2,
+     "date_from": "2026-12-01",
+     "adults": 2,
+     "price": 264.0,
+     "currency": "EUR",
+     "price_mdl": 5326.46,
+     "price_per": "person",
+     "price_pp_mdl": 5326.46,
+     "departure": "RMO",
+     "transport": "flight",
+     "url": "https://admiral.travel/ro/countries/turcia/istanbul/hotel-aldem?item_id=1704",
+     "hot": false,
+     "last_seen": "2026-11-19T14:55:31+02:00"
+    },
+    "... 47 more"
+   ],
+   "meta": {
+    "credits": 3,
+    "updated_at": "2026-11-19T14:56:49+02:00",
+    "sources": [
+     {
+      "name": "Admiral Travel",
+      "url": "https://admiral.travel",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "Panda Tur",
+      "url": "https://pandatur.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "Poehali s Nami",
+      "url": "https://www.poehalisnami.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null,
+    "page": {
+     "page": 1,
+     "per": 50,
+     "total": 250,
+     "pages": 5
+    }
+   }
+  }
+ },
+ "/flights/destinations": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299914",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "596",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": [
+    {
+     "iata": "SSH",
+     "city": "Sharm El Sheikh",
+     "airlines": [
+      "FLYONE",
+      "SkyUp Nistru",
+      "Wizz Air"
+     ],
+     "flights_per_week": 36,
+     "season_from": "2026-11-22",
+     "season_to": "2027-03-27",
+     "direct": true,
+     "fare_from": {
+      "destination": "SSH",
+      "airport": "SSH",
+      "price": 56.0,
+      "currency": "EUR",
+      "airline": "PC",
+      "flight_number": "439",
+      "departure_at": "2027-02-09T18:00:00+02:00",
+      "return_at": null,
+      "transfers": 1,
+      "duration": 245,
+      "price_mdl": 1129.86
+     }
+    },
+    {
+     "iata": "IST",
+     "city": "Istanbul",
+     "airlines": [
+      "HiSky",
+      "Polaris Aviation Group",
+      "Turkish Airlines"
+     ],
+     "flights_per_week": 31,
+     "season_from": "2026-11-22",
+     "season_to": "2027-03-27",
+     "direct": true,
+     "fare_from": {
+      "destination": "IST",
+      "airport": "IST",
+      "price": 51.0,
+      "currency": "EUR",
+      "airline": "RO",
+      "flight_number": "208",
+      "departure_at": "2027-01-22T22:55:00+02:00",
+      "return_at": null,
+      "transfers": 1,
+      "duration": 139,
+      "price_mdl": 1028.98
+     }
+    },
+    {
+     "iata": "OTP",
+     "city": "Bucureşti",
+     "airlines": [
+      "HiSky",
+      "TAROM"
+     ],
+     "flights_per_week": 17,
+     "season_from": "2026-11-22",
+     "season_to": "2027-03-27",
+     "direct": true,
+     "fare_from": {
+      "destination": "BUH",
+      "airport": "OTP",
+      "price": 21.0,
+      "currency": "EUR",
+      "airline": "W4",
+      "flight_number": "3040",
+      "departure_at": "2026-12-22T14:50:00+02:00",
+      "return_at": null,
+      "transfers": 0,
+      "duration": 70,
+      "price_mdl": 423.7
+     }
+    },
+    "... 125 more"
+   ],
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T14:50:40+02:00",
+    "sources": [
+     {
+      "name": "airport.md",
+      "url": "https://airport.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "Travelpayouts",
+      "url": "https://www.travelpayouts.com",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/flights/board?kind=departures": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299912",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "595",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": {
+    "kind": "departures",
+    "day": "2026-11-19",
+    "flights": []
+   },
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T14:50:41+02:00",
+    "sources": [
+     {
+      "name": "airport.md",
+      "url": "https://airport.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "Travelpayouts",
+      "url": "https://www.travelpayouts.com",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/rest": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "3",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299909",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "594",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": [
+    {
+     "id": 3,
+     "name": "Baza de odihnă Vacanza",
+     "kind": "base",
+     "region": "Municipiul Chișinău",
+     "city": "Vadul lui Vodă",
+     "lat": 47.083698,
+     "lon": 29.102177,
+     "price_from": 900.0,
+     "price_unit": "day",
+     "sources": [
+      {
+       "name": "ciupi.md",
+       "url": "https://ciupi.md/companie/pensiunea-della-nonna"
+      },
+      {
+       "name": "ciupi.md",
+       "url": "https://ciupi.md/ghid/casute-camere-inchiriat-vadul-voda"
+      },
+      {
+       "name": "ciupi.md",
+       "url": "https://ciupi.md/companie/hotel-vacanza"
+      },
+      "... 13 more"
+     ],
+     "updated_at": "2026-11-19T02:16:38+02:00"
+    },
+    {
+     "id": 39,
+     "name": "Baza de odihnă Sirius",
+     "kind": "base",
+     "region": "Municipiul Chișinău",
+     "city": "Vadul lui Vodă",
+     "lat": 47.085483,
+     "lon": 29.109437,
+     "price_from": 500.0,
+     "price_unit": "person_night",
+     "sources": [
+      {
+       "name": "ciupi.md",
+       "url": "https://ciupi.md/companie/baza-odihna-sirius"
+      },
+      {
+       "name": "ciupi.md",
+       "url": "https://ciupi.md/ghid/casute-camere-inchiriat-vadul-voda"
+      },
+      {
+       "name": "plaja.md",
+       "url": "https://plaja.md/moldova/vadul-lui-voda/3147-baza-de-odihna-sirius-vadul-lui-voda/"
+      },
+      "... 4 more"
+     ],
+     "updated_at": "2026-11-19T02:16:38+02:00"
+    },
+    {
+     "id": 62,
+     "name": "Baza de odihnă „Bârlogul Ursului”",
+     "kind": "base",
+     "region": "Raionul Ialoveni",
+     "city": "Ialoveni",
+     "lat": 46.950713,
+     "lon": 28.698223,
+     "price_from": 1500.0,
+     "price_unit": null,
+     "sources": [
+      {
+       "name": "moldova.travel",
+       "url": "https://moldova.travel/ro/experiences/27-baza-de-odihna-barlogul-ursului"
+      },
+      {
+       "name": "classifieds (name removed)",
+       "url": "https://classifieds.example/ad"
+      },
+      {
+       "name": "OpenStreetMap",
+       "url": "https://www.openstreetmap.org/node/11962662956"
+      },
+      "... 1 more"
+     ],
+     "updated_at": "2026-11-19T02:16:38+02:00"
+    },
+    "... 47 more"
+   ],
+   "meta": {
+    "credits": 3,
+    "updated_at": "2026-11-19T14:50:41+02:00",
+    "sources": [
+     {
+      "name": "classifieds (name removed)",
+      "url": null,
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "OpenStreetMap",
+      "url": null,
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "ciupi.md",
+      "url": null,
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     "... 8 more"
+    ],
+    "attribution": null,
+    "page": {
+     "page": 1,
+     "per": 50,
+     "total": 250,
+     "pages": 5
+    }
+   }
+  }
+ },
+ "/estate": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "3",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299906",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "593",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": {
+    "series": [
+     {
+      "kind": "rent",
+      "scope": "city",
+      "key": "balti:balti",
+      "name": "Bălți",
+      "unit": "lei/lună",
+      "points": [
+       {
+        "date": "2026-10-31",
+        "median": 5023.85,
+        "per_m2": 120.27,
+        "price": null,
+        "n": 260
+       },
+       {
+        "date": "2026-11-01",
+        "median": 5023.85,
+        "per_m2": 118.21,
+        "price": null,
+        "n": 269
+       },
+       {
+        "date": "2026-11-02",
+        "median": 5023.85,
+        "per_m2": 117.12,
+        "price": null,
+        "n": 276
+       },
+       "... 17 more"
+      ]
+     },
+     {
+      "kind": "rent",
+      "scope": "city",
+      "key": "chisinau:chisinau",
+      "name": "Chișinău",
+      "unit": "lei/lună",
+      "points": [
+       {
+        "date": "2026-10-31",
+        "median": 14066.78,
+        "per_m2": 234.45,
+        "price": null,
+        "n": 4054
+       },
+       {
+        "date": "2026-11-01",
+        "median": 14066.78,
+        "per_m2": 233.25,
+        "price": null,
+        "n": 4091
+       },
+       {
+        "date": "2026-11-02",
+        "median": 14066.78,
+        "per_m2": 232.35,
+        "price": null,
+        "n": 4115
+       },
+       "... 17 more"
+      ]
+     },
+     {
+      "kind": "rent",
+      "scope": "city",
+      "key": "chisinau:codru",
+      "name": "Codru",
+      "unit": "lei/lună",
+      "points": [
+       {
+        "date": "2026-11-13",
+        "median": 8064.64,
+        "per_m2": 203.81,
+        "price": null,
+        "n": 22
+       },
+       {
+        "date": "2026-11-14",
+        "median": 8062.96,
+        "per_m2": 203.77,
+        "price": null,
+        "n": 20
+       },
+       {
+        "date": "2026-11-15",
+        "median": 8970.04,
+        "per_m2": 208.75,
+        "price": null,
+        "n": 20
+       },
+       "... 3 more"
+      ]
+     },
+     "... 32 more"
+    ]
+   },
+   "meta": {
+    "credits": 3,
+    "updated_at": "2026-11-19T02:35:06+02:00",
+    "sources": [
+     {
+      "name": "classifieds (name removed)",
+      "url": "https://classifieds.example/ad",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/power": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299905",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "592",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": {
+    "date": "2026-11-20",
+    "currency": "MDL",
+    "unit": "MWh",
+    "base": 3108.46,
+    "volume": 3270.429,
+    "peak": 3462.29,
+    "peak_volume": 2639.781,
+    "offpeak": 2249.14,
+    "offpeak_volume": 630.648,
+    "intervals": 24,
+    "hours": [
+     {
+      "interval": 1,
+      "from": "00:00",
+      "to": "01:00",
+      "price": 1000.0,
+      "volume": 0.288,
+      "offered_sell": 28.254,
+      "offered_buy": 0.288,
+      "peak": false
+     },
+     {
+      "interval": 2,
+      "from": "01:00",
+      "to": "02:00",
+      "price": 2394.0,
+      "volume": 122.155,
+      "offered_sell": 207.155,
+      "offered_buy": 257.081,
+      "peak": false
+     },
+     {
+      "interval": 3,
+      "from": "02:00",
+      "to": "03:00",
+      "price": 2332.0,
+      "volume": 125.364,
+      "offered_sell": 220.364,
+      "offered_buy": 239.954,
+      "peak": false
+     },
+     "... 21 more"
+    ],
+    "cheapest": {
+     "interval": 1,
+     "price": 1000.0
+    },
+    "dearest": {
+     "interval": 18,
+     "price": 4617.0
+    },
+    "cheapest_3h": {
+     "from_interval": 1,
+     "price": 1908.67
+    },
+    "scale": {
+     "min": 0.0,
+     "max": 51000.0
+    },
+    "intraday": null
+   },
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-19T14:15:15+02:00",
+    "sources": [
+     {
+      "name": "OPEM",
+      "url": "https://www.opem.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": "Sursa: OPEM, Operatorul Pieței de Energie Electrică (opem.md)"
+   }
+  }
+ },
+ "/jokes/today": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299904",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "591",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": {
+    "id": "j_76",
+    "kind": "joke",
+    "title": "Mâine să vii cu bunicul",
+    "text": "Profesoara către elev:\n— Mâine să vii la școală cu bunicul tău!\n— Poate cu tata!\n— Nu, cu bunicul! Vreau să-i arăt ce tâmpenii debitează fiu-său, când îți face ție temele.",
+    "lang": "ro",
+    "topic": "school",
+    "topics": [
+     "family",
+     "school"
+    ],
+    "score": 70,
+    "md_score": 80,
+    "min_age": 9,
+    "kids_ok": true,
+    "adult": false,
+    "flags": [],
+    "langs": [
+     "en",
+     "ro",
+     "ru",
+     "... 1 more"
+    ],
+    "source": {
+     "name": "Râzi cu lacrimi",
+     "url": "https://raziculacrimi.ro/bancul-zilei/profa-maine-sa-vii-la-scoala-cu-bunicul-tau/"
+    },
+    "published_at": "2026-10-28T13:13:30+02:00",
+    "voice": [
+     {
+      "speaker": "narrator",
+      "text": "Ceva n-ai de făcut!"
+     }
+    ],
+    "dialogue": false,
+    "date": "2026-11-19"
+   },
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-05T14:49:17+02:00",
+    "sources": [
+     {
+      "name": "Râzi cu lacrimi",
+      "url": "https://raziculacrimi.ro/bancuri/",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/courts/courts": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299903",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "590",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": [
+    {
+     "slug": "curtea-de-apel-centru",
+     "name": "Curtea de Apel Centru",
+     "kind": "appeal",
+     "url": "https://satelit.md/ro/legislatie/sedinte-de-judecata/curtea-de-apel-centru",
+     "parent": null,
+     "circuit": "centru",
+     "read": true
+    },
+    {
+     "slug": "judecatoria-chisinau",
+     "name": "Judecătoria Chișinău",
+     "kind": "district",
+     "url": "https://satelit.md/ro/legislatie/sedinte-de-judecata/judecatoria-chisinau",
+     "parent": null,
+     "circuit": "centru",
+     "read": true
+    },
+    {
+     "slug": "judecatoria-chisinau-botanica",
+     "name": "Judecătoria Chișinău, sediul Botanica",
+     "kind": "seat",
+     "url": "https://satelit.md/ro/legislatie/sedinte-de-judecata/judecatoria-chisinau-botanica",
+     "court": "judecatoria-chisinau",
+     "parent": "judecatoria-chisinau",
+     "circuit": "centru",
+     "read": true
+    },
+    "... 54 more"
+   ],
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-19T16:33:21+02:00",
+    "sources": [
+     {
+      "name": "instante.justice.md",
+      "url": "https://instante.justice.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     },
+     {
+      "name": "agenda.csj.md",
+      "url": "https://agenda.csj.md",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": null,
+    "coverage": {
+     "courts_read": 18,
+     "courts_total": 18,
+     "complete": false,
+     "agenda_from": "2026-10-30",
+     "registered_from": "2018-05-25",
+     "decisions_from": "2024-09-05",
+     "archive_from": "2001-10-01",
+     "updated_at": "2026-11-19T16:33:21+02:00",
+     "note": "Toate cele 18 instanțe sunt citite, agenda e completă de la 30.10.2026; înainte de această zi pot lipsi încă ședințele dosarelor înregistrate înainte de 25.5.2018."
+    }
+   }
+  }
+ },
+ "/citizenship/oath": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299902",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "589",
+   "x-ratelimit-reset": "60"
+  },
+  "body": {
+   "data": {
+    "as_of": {
+     "orders_until": "2026-11-06",
+     "lists_until": "2026-10-08",
+     "line": "Date ANC până la 06.11.2026"
+    },
+    "next": [],
+    "recent": [
+     {
+      "date": "2026-11-05",
+      "time": null,
+      "place": "București",
+      "dossiers": 63,
+      "source": {
+       "url": "https://cetatenie.just.ro/wp-content/uploads/2026/11/tabel-afisare-site-05.11.2026-ora-10.00.pdf",
+       "title": "Lista persoanelor programate pentru depunerea jurământului, la sediul ANC București – 05.11.2026, ora 10.00",
+       "date": "2026-11-05",
+       "pages": 2,
+       "via": "live"
+      }
+     },
+     {
+      "date": "2026-11-04",
+      "time": "09:00",
+      "place": "București",
+      "dossiers": 105,
+      "source": {
+       "url": "https://cetatenie.just.ro/wp-content/uploads/2026/11/tabel-afisare-site-04.11.2026-ora-9.00.pdf",
+       "title": "Lista persoanelor programate pentru depunerea jurământului, la sediul ANC București – 04.11.2026, ora 09.00",
+       "date": "2026-11-04",
+       "pages": 3,
+       "via": "live"
+      }
+     },
+     {
+      "date": "2025-05-27",
+      "time": "12:30",
+      "place": "București",
+      "dossiers": 72,
+      "source": {
+       "url": "https://cetatenie.just.ro/storage/2025/05/Tabel-SITE-27-mai-2025-ora-12.30.pdf",
+       "title": "Lista persoanelor programate pentru depunerea jurământului, la sediul ANC București – 27.05.2025, ora 12.30",
+       "date": "2025-05-27",
+       "pages": 4,
+       "via": "archive",
+       "archive_url": "https://web.archive.org/web/20250101000000/https://cetatenie.just.ro/storage/2025/05/Tabel-SITE-27-mai-2025-ora-12.30.pdf"
+      }
+     },
+     "... 1 more"
+    ],
+    "count": 4,
+    "page": "https://satelit.md/ro/legislatie/cetatenie-romana/juramant",
+    "waits": {
+     "reg_to_oath_days": 1247,
+     "order_to_oath_days": 48,
+     "dossiers": 285,
+     "with_order": 276
+    }
+   },
+   "meta": {
+    "credits": 1,
+    "updated_at": "2026-11-09T06:15:41+02:00",
+    "sources": [
+     {
+      "name": "ANC (cetatenie.just.ro)",
+      "url": "https://cetatenie.just.ro",
+      "license": "none: read from the source's public pages; no agreement with the source and no licence over its data is granted"
+     }
+    ],
+    "attribution": "Sursa: Autoritatea Națională pentru Cetățenie (cetatenie.just.ro); listele mai vechi: copiile Internet Archive (web.archive.org)"
+   }
+  }
+ },
+ "/companies?q=moldtelecom": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "3",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299899",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "588",
+   "x-ratelimit-reset": "59"
+  },
+  "body": {
+   "data": [
+    {
+     "idno": "1002600048836",
+     "slug": "moldtelecom-1002600048836",
+     "name": "Societatea pe Acţiuni MOLDTELECOM",
+     "display": "MOLDTELECOM",
+     "legal_form": "SA",
+     "active": true,
+     "city": "Chișinău",
+     "registered": "1999-01-05",
+     "activity": {
+      "text": null,
+      "division": {
+       "key": "r1-64",
+       "code": "64",
+       "revision": "r1",
+       "name": "Poștă și telecomunicații"
+      },
+      "class": null,
+      "sector": {
+       "key": "ict",
+       "name": "IT și comunicații"
+      }
+     },
+     "contracts_won": 2225,
+     "contracts_mdl": 23406972.6,
+     "court_cases": 0,
+     "page": "https://satelit.md/ro/legislatie/companii/moldtelecom-1002600048836"
+    },
+    {
+     "idno": "2600048836836",
+     "slug": "moldtelecom-2600048836836",
+     "name": "SOCIETATEA PE ACTIUNI \"MOLDTELECOM\"",
+     "display": "MOLDTELECOM",
+     "legal_form": "SA",
+     "active": null,
+     "city": "b Ctefan cel mare 10",
+     "registered": null,
+     "activity": {
+      "text": null,
+      "division": null,
+      "class": null,
+      "sector": null
+     },
+     "contracts_won": 1,
+     "contracts_mdl": 375.0,
+     "court_cases": 0,
+     "page": "https://satelit.md/ro/legislatie/companii/moldtelecom-2600048836836"
+    }
+   ],
+   "meta": {
+    "credits": 3,
+    "updated_at": "2026-11-19T16:15:32+02:00",
+    "sources": [
+     {
+      "name": "Agenția Servicii Publice (registrul de stat)",
+      "url": "https://asp.gov.md/ro/date-deschise",
+      "license": "Open data (Law 109/2025), source named"
+     }
+    ],
+    "attribution": "Sursa: Agenția Servicii Publice, registrul de stat al persoanelor juridice (date.gov.md, asp.gov.md)",
+    "page": {
+     "page": 1,
+     "per": 20,
+     "total": 2,
+     "pages": 1
+    }
+   }
+  }
+ },
+ "/companies/stats": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299897",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "587",
+   "x-ratelimit-reset": "59"
+  },
+  "body": {
+   "data": {
+    "total": 170782,
+    "active": 120170,
+    "in_register": 167030,
+    "register_date": "2026-11-16",
+    "forms": [
+     {
+      "form": "SRL",
+      "n": 112424
+     },
+     {
+      "form": "Alte forme de asociaţii",
+      "n": 2654
+     },
+     {
+      "form": "SA",
+      "n": 1531
+     },
+     "... 5 more"
+    ],
+    "cities": [
+     {
+      "city": "Chișinău",
+      "n": 75912
+     },
+     {
+      "city": "Bălți",
+      "n": 4773
+     },
+     {
+      "city": "Comrat",
+      "n": 1572
+     },
+     "... 9 more"
+    ],
+    "sectors": [
+     {
+      "key": "trade",
+      "name": "Comerț",
+      "n": 40944
+     },
+     {
+      "key": "manuf",
+      "name": "Industrie prelucrătoare",
+      "n": 12522
+     },
+     {
+      "key": "pro",
+      "name": "Servicii profesionale",
+      "n": 10607
+     },
+     "... 15 more"
+    ],
+    "years": [
+     {
+      "year": 1992,
+      "n": 4231
+     },
+     {
+      "year": 1993,
+      "n": 3085
+     },
+     {
+      "year": 1994,
+      "n": 2431
+     },
+     "... 32 more"
+    ],
+    "with_site": 789,
+    "contracts": 76962,
+    "contracts_mdl": 8177674714.03
+   },
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-19T16:15:32+02:00",
+    "sources": [
+     {
+      "name": "Agenția Servicii Publice (registrul de stat)",
+      "url": "https://asp.gov.md/ro/date-deschise",
+      "license": "Open data (Law 109/2025), source named"
+     },
+     {
+      "name": "MTender",
+      "url": "https://public.mtender.gov.md",
+      "license": "Open data (OCDS), source named"
+     }
+    ],
+    "attribution": "Sursa: Agenția Servicii Publice, registrul de stat al persoanelor juridice (date.gov.md, asp.gov.md); Sursa: MTender (public.mtender.gov.md)"
+   }
+  }
+ },
+ "/delivery": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299895",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "586",
+   "x-ratelimit-reset": "58"
+  },
+  "body": {
+   "data": {
+    "cities": [
+     {
+      "key": "chisinau",
+      "name": "Chișinău",
+      "raion": "municipiul Chișinău",
+      "lat": 47.0105,
+      "lon": 28.8638
+     },
+     {
+      "key": "balti",
+      "name": "Bălți",
+      "raion": "municipiul Bălți",
+      "lat": 47.7617,
+      "lon": 27.9289
+     },
+     {
+      "key": "cahul",
+      "name": "Cahul",
+      "raion": "raionul Cahul",
+      "lat": 45.9075,
+      "lon": 28.1944
+     },
+     "... 10 more"
+    ],
+    "stores": [
+     {
+      "key": "agroteh",
+      "name": "Agroteh",
+      "site": "https://agroteh.md",
+      "zones": [
+       {
+        "cities": [
+         "chisinau"
+        ],
+        "fee": 50,
+        "fee_max": 50,
+        "free_from": 700,
+        "min_order": null,
+        "days_min": null,
+        "days_max": null,
+        "how": "courier",
+        "per_km": null,
+        "note": "Free above 700 MDL, else 50 MDL; weekdays 10:00-19:00; Saturday-afternoon and Sunday orders processed Monday; suburbs from 50 MDL; carrying big items to a floor costs extra (from 100 MDL)."
+       },
+       {
+        "cities": [
+         "*"
+        ],
+        "fee": null,
+        "fee_max": null,
+        "free_from": null,
+        "min_order": null,
+        "days_min": 1,
+        "days_max": 3,
+        "how": "courier",
+        "per_km": null,
+        "note": "1-3 working days; fee 'set with the operator', no amount published. Delivery page shows a Nova Poshta logo but the text does not name the carrier. Transnistria customs posts 100-600 MDL."
+       }
+      ],
+      "shops": {
+       "chisinau": 1
+      },
+      "shops_total": 1,
+      "pickup": {
+       "available": null,
+       "fee": null,
+       "where": "Shop at str. Lisabona 2/2, Chisinau exists, but neither the delivery nor the contact page describes pickup of online orders"
+      },
+      "prices": "same",
+      "price_note": "No city selector or city-specific price seen on the pages read; not checked product by product.",
+      "delivery_terms": null,
+      "pickup_terms": null,
+      "sources": [
+       "https://agroteh.md",
+       "https://agroteh.md/ro/dostavka.aspx",
+       "https://agroteh.md/ro/contact-us/"
+      ],
+      "checked": "2026-10-30"
+     },
+     {
+      "key": "agrotop",
+      "name": "Agrotop",
+      "site": "https://agrotop.md",
+      "zones": [
+       {
+        "cities": [
+         "chisinau"
+        ],
+        "fee": 50,
+        "fee_max": 50,
+        "free_from": 700,
+        "min_order": null,
+        "days_min": null,
+        "days_max": null,
+        "how": "courier",
+        "per_km": null,
+        "note": "Free above 700 MDL, else 50 MDL; weekdays 10:00-17:00 or later; weekend orders processed Monday; suburbs from 50 MDL; carrying big items to a floor costs extra (from 100 MDL)."
+       },
+       {
+        "cities": [
+         "*"
+        ],
+        "fee": null,
+        "fee_max": null,
+        "free_from": null,
+        "min_order": null,
+        "days_min": 1,
+        "days_max": 3,
+        "how": "courier",
+        "per_km": null,
+        "note": "1-3 working days; fee 'set with the operator', no amount published; carrier not named. Transnistria customs posts 100-600 MDL."
+       }
+      ],
+      "shops": {
+       "chisinau": 1
+      },
+      "shops_total": 1,
+      "pickup": {
+       "available": null,
+       "fee": null,
+       "where": "Contact address str. Lisabona 2/2, Chisinau; no pickup described"
+      },
+      "prices": "same",
+      "price_note": "No city selector or city-specific price seen on the pages read; not checked product by product.",
+      "delivery_terms": null,
+      "pickup_terms": null,
+      "sources": [
+       "https://agrotop.md",
+       "https://agrotop.md/ro/dostavka.html",
+       "https://agrotop.md/ro/contact-us/"
+      ],
+      "checked": "2026-10-30"
+     },
+     {
+      "key": "apteka",
+      "name": "Apteka.md",
+      "site": "https://apteka.md",
+      "zones": [
+       {
+        "cities": [
+         "chisinau"
+        ],
+        "fee": 40,
+        "fee_max": 40,
+        "free_from": 350,
+        "min_order": 30,
+        "days_min": 0,
+        "days_max": 1,
+        "how": null,
+        "per_km": null,
+        "note": "FAQ: free over 350 lei, 40 lei up to 350 lei; same-day if ordered in time (cut-off 22:00 per FAQ, 12:00 per user agreement)."
+       },
+       {
+        "cities": [
+         "balti"
+        ],
+        "fee": 40,
+        "fee_max": 40,
+        "free_from": 350,
+        "min_order": 30,
+        "days_min": null,
+        "days_max": null,
+        "how": null,
+        "per_km": null,
+        "note": "FAQ gives the same fee and threshold for Chisinau and Balti; Balti delivery time not found."
+       },
+       {
+        "cities": [
+         "*"
+        ],
+        "fee": null,
+        "fee_max": null,
+        "free_from": null,
+        "min_order": 30,
+        "days_min": null,
+        "days_max": null,
+        "how": null,
+        "per_km": null,
+        "note": "Site title claims delivery across Moldova; fee for other towns not found (user agreement mentions free over 400 lei, older/generic, fee below shown at checkout)."
+       }
+      ],
+      "shops": {},
+      "shops_total": null,
+      "pickup": {
+       "available": true,
+       "fee": 0,
+       "where": "free at partner 'Farmina' pharmacies (delivery points incl. Chisinau and Drochia); order held 3 days",
+       "cities": [
+        "chisinau",
+        "drochia"
+       ]
+      },
+      "prices": "unknown",
+      "price_note": "Marketplace of partner pharmacies; no per-city price information found.",
+      "delivery_terms": null,
+      "pickup_terms": null,
+      "sources": [
+       "https://www.apteka.md/",
+       "https://www.apteka.md/news/f-a-q-chasto-zadavaemye-voprosy",
+       "https://www.apteka.md/acord-de-utilizare",
+       "... 3 more"
+      ],
+      "checked": "2026-10-30"
+     },
+     "... 42 more"
+    ]
+   },
+   "meta": {
+    "credits": 2,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Agroteh",
+      "url": "https://agroteh.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Agrotop",
+      "url": "https://agrotop.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     {
+      "name": "Apteka.md",
+      "url": "https://apteka.md",
+      "license": "none: read from the shop's public pages; no agreement with the shop and no licence over its data is granted"
+     },
+     "... 42 more"
+    ],
+    "attribution": null,
+    "checked": "2026-10-30"
+   }
+  }
+ },
+ "/insurance/market": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "2",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299893",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "585",
+   "x-ratelimit-reset": "58"
+  },
+  "body": {
+   "data": {
+    "quarter": "2026-06-30",
+    "classes": [
+     {
+      "code": "02101",
+      "key": "rca",
+      "name": "RCA internă",
+      "policies": 425110.0,
+      "premiums": 571624360.11,
+      "claims_n": 15280.0,
+      "claims_paid": 344704953.62,
+      "avg_premium": 1344.65
+     },
+     {
+      "code": "02102",
+      "key": "green_card",
+      "name": "Carte Verde",
+      "policies": 191724.0,
+      "premiums": 215856319.52,
+      "claims_n": 995.0,
+      "claims_paid": 93982732.81,
+      "avg_premium": 1125.87
+     },
+     {
+      "code": "0203",
+      "key": "casco",
+      "name": "CASCO",
+      "policies": 14458.0,
+      "premiums": 346408679.44,
+      "claims_n": 7748.0,
+      "claims_paid": 200679682.3,
+      "avg_premium": 23959.65
+     },
+     "... 6 more"
+    ],
+    "quarters": [
+     {
+      "date": "2023-12-31",
+      "gwp": 2935946600.83,
+      "claims": 1006638945.13
+     },
+     {
+      "date": "2024-03-31",
+      "gwp": 669074419.92,
+      "claims": 265635870.07
+     },
+     {
+      "date": "2024-06-30",
+      "gwp": 1553114407.28,
+      "claims": 531805022.39
+     },
+     "... 8 more"
+    ],
+    "rca_avg": [
+     {
+      "date": "2023-01-31",
+      "value": 1264.39
+     },
+     {
+      "date": "2023-02-28",
+      "value": 1287.35
+     },
+     {
+      "date": "2023-03-31",
+      "value": 1254.73
+     },
+     "... 41 more"
+    ],
+    "green_card_avg": [
+     {
+      "date": "2023-01-31",
+      "value": 1391.15
+     },
+     {
+      "date": "2023-02-28",
+      "value": 1347.61
+     },
+     {
+      "date": "2023-03-31",
+      "value": 1354.88
+     },
+     "... 41 more"
+    ]
+   },
+   "meta": {
+    "credits": 2,
+    "updated_at": "2026-11-06T23:09:30+02:00",
+    "sources": [
+     {
+      "name": "BNM",
+      "url": "https://www.bnm.md/ro/content/ratele-de-schimb",
+      "license": "CC BY 4.0"
+     }
+    ],
+    "attribution": "Sursa: Banca Națională a Moldovei, bnm.md, CC BY 4.0",
+    "notice": "Aceleași date sunt gratuite la bnm.md."
+   }
+  }
+ },
+ "/geo/search?q=stefan": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "1",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299892",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "584",
+   "x-ratelimit-reset": "58"
+  },
+  "body": {
+   "data": null,
+   "meta": {
+    "credits": 1,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0, © OpenStreetMap contributors",
+      "download": "https://api.satelit.md/downloads/places-osm.ndjson.gz"
+     }
+    ],
+    "attribution": "© OpenStreetMap contributors, ODbL"
+   }
+  }
+ },
+ "/catalog/tree": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299892",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "583",
+   "x-ratelimit-reset": "57"
+  },
+  "body": {
+   "data": {
+    "langs": [
+     "ro",
+     "ru",
+     "en",
+     "... 1 more"
+    ],
+    "categories": [
+     {
+      "key": "groceries",
+      "label": {
+       "ro": "Alimente",
+       "ru": "Продукты",
+       "en": "Groceries",
+       "uk": "Продукти"
+      },
+      "slug": {
+       "ro": "alimente",
+       "ru": "produkty",
+       "en": "groceries",
+       "uk": "produkty"
+      }
+     },
+     {
+      "key": "meat_fish",
+      "label": {
+       "ro": "Carne și pește",
+       "ru": "Мясо и рыба",
+       "en": "Meat & fish",
+       "uk": "М'ясо і риба"
+      },
+      "slug": {
+       "ro": "carne-peste",
+       "ru": "myaso-ryba",
+       "en": "meat-fish",
+       "uk": "miaso-ryba"
+      }
+     },
+     {
+      "key": "dairy_eggs",
+      "label": {
+       "ro": "Lactate și ouă",
+       "ru": "Молочное и яйца",
+       "en": "Dairy & eggs",
+       "uk": "Молочне та яйця"
+      },
+      "slug": {
+       "ro": "lactate-oua",
+       "ru": "molochnye-yayca",
+       "en": "dairy-eggs",
+       "uk": "molochne-yaitsia"
+      }
+     },
+     "... 22 more"
+    ],
+    "departments": [
+     {
+      "key": "electronics",
+      "category": "electronics",
+      "label": {
+       "ro": "Electronice",
+       "ru": "Электроника",
+       "en": "Electronics",
+       "uk": "Електроніка"
+      },
+      "slug": {
+       "ro": "electronice",
+       "ru": "elektronika",
+       "en": "electronics",
+       "uk": "elektronika"
+      },
+      "subcategories": [
+       {
+        "key": "phones",
+        "facets": [
+         "storage",
+         "ram",
+         "screen"
+        ],
+        "label": {
+         "ro": "Telefoane mobile",
+         "ru": "Смартфоны",
+         "en": "Mobile phones",
+         "uk": "Смартфони"
+        },
+        "slug": {
+         "ro": "telefoane-mobile",
+         "ru": "smartfony",
+         "en": "mobile-phones",
+         "uk": "smartfony"
+        },
+        "leaves": []
+       },
+       {
+        "key": "laptops",
+        "facets": [
+         "storage",
+         "ram",
+         "screen"
+        ],
+        "label": {
+         "ro": "Laptopuri",
+         "ru": "Ноутбуки",
+         "en": "Laptops",
+         "uk": "Ноутбуки"
+        },
+        "slug": {
+         "ro": "laptopuri",
+         "ru": "noutbuki",
+         "en": "laptops",
+         "uk": "noutbuky"
+        },
+        "leaves": []
+       },
+       {
+        "key": "tablets",
+        "facets": [
+         "storage",
+         "ram",
+         "screen"
+        ],
+        "label": {
+         "ro": "Tablete",
+         "ru": "Планшеты",
+         "en": "Tablets",
+         "uk": "Планшети"
+        },
+        "slug": {
+         "ro": "tablete",
+         "ru": "planshety",
+         "en": "tablets",
+         "uk": "planshety"
+        },
+        "leaves": []
+       },
+       "... 9 more"
+      ]
+     },
+     {
+      "key": "appliances",
+      "category": "home",
+      "label": {
+       "ro": "Electrocasnice",
+       "ru": "Бытовая техника",
+       "en": "Appliances",
+       "uk": "Побутова техніка"
+      },
+      "slug": {
+       "ro": "electrocasnice",
+       "ru": "bytovaya-tehnika",
+       "en": "appliances",
+       "uk": "pobutova-tekhnika"
+      },
+      "subcategories": [
+       {
+        "key": "fridges",
+        "facets": [],
+        "label": {
+         "ro": "Frigidere și congelatoare",
+         "ru": "Холодильники и морозильники",
+         "en": "Fridges and freezers",
+         "uk": "Холодильники та морозильники"
+        },
+        "slug": {
+         "ro": "frigidere",
+         "ru": "holodilniki",
+         "en": "fridges",
+         "uk": "kholodylnyky"
+        },
+        "leaves": [
+         {
+          "key": "refrigerators",
+          "label": {
+           "ro": "Frigidere",
+           "ru": "Холодильники",
+           "en": "Refrigerators",
+           "uk": "Холодильники"
+          },
+          "slug": {
+           "ro": "frigidere",
+           "ru": "holodilniki",
+           "en": "refrigerators",
+           "uk": "kholodylnyky"
+          }
+         },
+         {
+          "key": "freezers",
+          "label": {
+           "ro": "Congelatoare și lăzi frigorifice",
+           "ru": "Морозильники и лари",
+           "en": "Freezers and chest freezers",
+           "uk": "Морозильники та лари"
+          },
+          "slug": {
+           "ro": "congelatoare-lazi-frigorifice",
+           "ru": "morozilniki-lari",
+           "en": "freezers-chest-freezers",
+           "uk": "morozylnyky-lary"
+          }
+         },
+         {
+          "key": "wine_coolers",
+          "label": {
+           "ro": "Răcitoare de vin și vitrine",
+           "ru": "Винные шкафы и витрины",
+           "en": "Wine coolers and display fridges",
+           "uk": "Винні шафи та вітрини"
+          },
+          "slug": {
+           "ro": "racitoare-vin-vitrine",
+           "ru": "vinnye-shkafy-vitriny",
+           "en": "wine-coolers-display-fridges",
+           "uk": "vynni-shafy-vitryny"
+          }
+         }
+        ]
+       },
+       {
+        "key": "washers",
+        "facets": [],
+        "label": {
+         "ro": "Mașini de spălat și uscătoare",
+         "ru": "Стиральные и сушильные машины",
+         "en": "Washers and dryers",
+         "uk": "Пральні та сушильні машини"
+        },
+        "slug": {
+         "ro": "masini-de-spalat",
+         "ru": "stiralnye-mashiny",
+         "en": "washing-machines",
+         "uk": "pralni-mashyny"
+        },
+        "leaves": [
+         {
+          "key": "washing_machines",
+          "label": {
+           "ro": "Mașini de spălat rufe",
+           "ru": "Стиральные машины",
+           "en": "Washing machines",
+           "uk": "Пральні машини"
+          },
+          "slug": {
+           "ro": "masini-spalat-rufe",
+           "ru": "stiralnye-mashiny",
+           "en": "washing-machines",
+           "uk": "pralni-mashyny"
+          }
+         },
+         {
+          "key": "dryers",
+          "label": {
+           "ro": "Mașini de uscat rufe",
+           "ru": "Сушильные машины",
+           "en": "Tumble dryers",
+           "uk": "Сушильні машини"
+          },
+          "slug": {
+           "ro": "uscatoare-rufe",
+           "ru": "sushilnye-mashiny",
+           "en": "tumble-dryers",
+           "uk": "sushylni-mashyny"
+          }
+         },
+         {
+          "key": "laundry_racks",
+          "label": {
+           "ro": "Suporturi pentru uscat rufe",
+           "ru": "Сушилки для белья",
+           "en": "Clothes drying racks",
+           "uk": "Сушарки для білизни"
+          },
+          "slug": {
+           "ro": "suporturi-pentru-uscat-rufe",
+           "ru": "sushilki-dlya-belya",
+           "en": "clothes-drying-racks",
+           "uk": "susharky-dlya-bilyzny"
+          }
+         }
+        ]
+       },
+       {
+        "key": "cooking",
+        "facets": [],
+        "label": {
+         "ro": "Aragaze, plite și cuptoare",
+         "ru": "Плиты и духовки",
+         "en": "Cookers and ovens",
+         "uk": "Плити та духовки"
+        },
+        "slug": {
+         "ro": "aragaze-cuptoare",
+         "ru": "plity-duhovki",
+         "en": "cookers-ovens",
+         "uk": "plyty-dukhovky"
+        },
+        "leaves": [
+         {
+          "key": "cookers",
+          "label": {
+           "ro": "Aragaze",
+           "ru": "Плиты",
+           "en": "Cookers",
+           "uk": "Плити"
+          },
+          "slug": {
+           "ro": "aragaze",
+           "ru": "plity",
+           "en": "cookers",
+           "uk": "plyty"
+          }
+         },
+         {
+          "key": "hobs",
+          "label": {
+           "ro": "Plite",
+           "ru": "Варочные панели",
+           "en": "Hobs",
+           "uk": "Варильні поверхні"
+          },
+          "slug": {
+           "ro": "plite",
+           "ru": "varochnye-paneli",
+           "en": "hobs",
+           "uk": "varylni-poverkhni"
+          }
+         },
+         {
+          "key": "ovens",
+          "label": {
+           "ro": "Cuptoare",
+           "ru": "Духовые шкафы",
+           "en": "Ovens",
+           "uk": "Духові шафи"
+          },
+          "slug": {
+           "ro": "cuptoare",
+           "ru": "duhovye-shkafy",
+           "en": "ovens",
+           "uk": "dukhovi-shafy"
+          }
+         },
+         "... 1 more"
+        ]
+       },
+       "... 9 more"
+      ]
+     },
+     {
+      "key": "home",
+      "category": "home",
+      "label": {
+       "ro": "Casă și mobilă",
+       "ru": "Дом и мебель",
+       "en": "Home and furniture",
+       "uk": "Дім і меблі"
+      },
+      "slug": {
+       "ro": "casa-mobila",
+       "ru": "dom-mebel",
+       "en": "home-furniture",
+       "uk": "dim-mebli"
+      },
+      "subcategories": [
+       {
+        "key": "furniture",
+        "facets": [],
+        "label": {
+         "ro": "Mobilă",
+         "ru": "Мебель",
+         "en": "Furniture",
+         "uk": "Меблі"
+        },
+        "slug": {
+         "ro": "mobila",
+         "ru": "mebel",
+         "en": "furniture",
+         "uk": "mebli"
+        },
+        "leaves": [
+         {
+          "key": "sofas",
+          "label": {
+           "ro": "Canapele și fotolii",
+           "ru": "Диваны и кресла",
+           "en": "Sofas and armchairs",
+           "uk": "Дивани та крісла"
+          },
+          "slug": {
+           "ro": "canapele-fotolii",
+           "ru": "divany-kresla",
+           "en": "sofas-armchairs",
+           "uk": "dyvany-krisla"
+          }
+         },
+         {
+          "key": "beds",
+          "label": {
+           "ro": "Paturi și somiere",
+           "ru": "Кровати",
+           "en": "Beds",
+           "uk": "Ліжка"
+          },
+          "slug": {
+           "ro": "paturi-somiere",
+           "ru": "krovati",
+           "en": "beds",
+           "uk": "lizhka"
+          }
+         },
+         {
+          "key": "wardrobes",
+          "label": {
+           "ro": "Dulapuri și comode",
+           "ru": "Шкафы и комоды",
+           "en": "Wardrobes and dressers",
+           "uk": "Шафи та комоди"
+          },
+          "slug": {
+           "ro": "dulapuri-comode",
+           "ru": "shkafy-komody",
+           "en": "wardrobes-dressers",
+           "uk": "shafy-komody"
+          }
+         },
+         "... 5 more"
+        ]
+       },
+       {
+        "key": "mattresses",
+        "facets": [],
+        "label": {
+         "ro": "Saltele și perne",
+         "ru": "Матрасы и подушки",
+         "en": "Mattresses and pillows",
+         "uk": "Матраци та подушки"
+        },
+        "slug": {
+         "ro": "saltele-perne",
+         "ru": "matrasy-podushki",
+         "en": "mattresses-pillows",
+         "uk": "matratsy-podushky"
+        },
+        "leaves": [
+         {
+          "key": "mattress",
+          "label": {
+           "ro": "Saltele",
+           "ru": "Матрасы",
+           "en": "Mattresses",
+           "uk": "Матраци"
+          },
+          "slug": {
+           "ro": "saltele",
+           "ru": "matrasy",
+           "en": "mattresses",
+           "uk": "matratsy"
+          }
+         },
+         {
+          "key": "pillows",
+          "label": {
+           "ro": "Perne",
+           "ru": "Подушки",
+           "en": "Pillows",
+           "uk": "Подушки"
+          },
+          "slug": {
+           "ro": "perne",
+           "ru": "podushki",
+           "en": "pillows",
+           "uk": "podushky"
+          }
+         },
+         {
+          "key": "toppers",
+          "label": {
+           "ro": "Toppere și protecții de saltea",
+           "ru": "Топперы и наматрасники",
+           "en": "Toppers and mattress protectors",
+           "uk": "Топери та наматрацники"
+          },
+          "slug": {
+           "ro": "toppere-protectii-saltea",
+           "ru": "toppery-namatrasniki",
+           "en": "toppers-mattress-protectors",
+           "uk": "topery-namatratsnyky"
+          }
+         }
+        ]
+       },
+       {
+        "key": "textiles",
+        "facets": [],
+        "label": {
+         "ro": "Textile pentru casă",
+         "ru": "Домашний текстиль",
+         "en": "Home textiles",
+         "uk": "Домашній текстиль"
+        },
+        "slug": {
+         "ro": "textile-casa",
+         "ru": "domashniy-tekstil",
+         "en": "home-textiles",
+         "uk": "domashnii-tekstyl"
+        },
+        "leaves": [
+         {
+          "key": "bed_linen",
+          "label": {
+           "ro": "Lenjerie de pat",
+           "ru": "Постельное бельё",
+           "en": "Bed linen",
+           "uk": "Постільна білизна"
+          },
+          "slug": {
+           "ro": "lenjerie-de-pat",
+           "ru": "postelnoe-bele",
+           "en": "bed-linen",
+           "uk": "postilna-bilyzna"
+          }
+         },
+         {
+          "key": "blankets",
+          "label": {
+           "ro": "Pături și pilote",
+           "ru": "Одеяла и пледы",
+           "en": "Blankets and duvets",
+           "uk": "Ковдри та пледи"
+          },
+          "slug": {
+           "ro": "paturi-pilote",
+           "ru": "odeyala-pledy",
+           "en": "blankets-duvets",
+           "uk": "kovdry-pledy"
+          }
+         },
+         {
+          "key": "towels",
+          "label": {
+           "ro": "Prosoape și halate",
+           "ru": "Полотенца и халаты",
+           "en": "Towels and bathrobes",
+           "uk": "Рушники та халати"
+          },
+          "slug": {
+           "ro": "prosoape-halate",
+           "ru": "polotentsa-khalaty",
+           "en": "towels-bathrobes",
+           "uk": "rushnyky-khalaty"
+          }
+         },
+         "... 3 more"
+        ]
+       },
+       "... 6 more"
+      ]
+     },
+     "... 9 more"
+    ]
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/search?q=matrix": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299852",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "582",
+   "x-ratelimit-reset": "57"
+  },
+  "body": {
+   "data": {
+    "page": 1,
+    "pages": 7,
+    "total": 126,
+    "results": [
+     {
+      "id": "m603",
+      "kind": "movie",
+      "title": "Matrix",
+      "original_title": "The Matrix",
+      "year": 1999,
+      "released": "1999-03-31",
+      "language": "en",
+      "rating": {
+       "value": 8.3,
+       "votes": 29297
+      },
+      "overview": "Thomas Anderson, un hacker cunoscut sub numele de Neo, caută răspunsuri la întrebările care îl macină. Când misterioasa Trinity îl conduce la Morpheus, un om care pare să știe adevărul, Neo descoperă că lumea pe care o știe nu este ceea ce pare și este atras într-o luptă secretă care poate schimba s…",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg"
+       }
+      },
+      "genres": [
+       "Acțiune",
+       "SF"
+      ]
+     },
+     {
+      "id": "m604",
+      "kind": "movie",
+      "title": "Matrix - Reîncărcat",
+      "original_title": "The Matrix Reloaded",
+      "year": 2003,
+      "released": "2003-05-15",
+      "language": "en",
+      "rating": {
+       "value": 7.1,
+       "votes": 12561
+      },
+      "overview": "Neo, Trinity și Morpheus continuă lupta împotriva mașinilor, în timp ce Zion, ultimul oraș al oamenilor liberi, se pregătește pentru un atac iminent. În încercarea de a opri distrugerea omenirii, ei pătrund mai adânc în structura Matrixului, iar Neo începe să înțeleagă rolul decisiv care îi revine.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/f5PbRM23f8AYpDJCEmgQTwWI3zI.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/f5PbRM23f8AYpDJCEmgQTwWI3zI.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/f5PbRM23f8AYpDJCEmgQTwWI3zI.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/ihOJcrorpDQtHTzIOrobbOhpJsj.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/ihOJcrorpDQtHTzIOrobbOhpJsj.jpg"
+       }
+      },
+      "genres": [
+       "Acțiune",
+       "Thriller",
+       "SF"
+      ]
+     },
+     {
+      "id": "m624860",
+      "kind": "movie",
+      "title": "Matrix: Renașterea",
+      "original_title": "The Matrix Resurrections",
+      "year": 2021,
+      "released": "2021-12-16",
+      "language": "en",
+      "rating": {
+       "value": 6.3,
+       "votes": 6881
+      },
+      "overview": "Thomas Anderson, cunoscut cândva drept Neo, duce o viață aparent obișnuită ca creator de jocuri video, convins că experiențele sale din trecut sunt doar rodul imaginației. Când o tânără pe nume Bugs îl îndeamnă să pună la îndoială realitatea în care trăiește, începe să redescopere adevărul despre Ma…",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/uMI2KQ6r6ds4EfCdBL8o7AeDOky.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/uMI2KQ6r6ds4EfCdBL8o7AeDOky.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/uMI2KQ6r6ds4EfCdBL8o7AeDOky.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg"
+       }
+      },
+      "genres": [
+       "SF",
+       "Acțiune",
+       "Aventuri"
+      ]
+     },
+     "... 17 more"
+    ]
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/titles/m603": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299812",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "581",
+   "x-ratelimit-reset": "57"
+  },
+  "body": {
+   "data": {
+    "id": "m603",
+    "kind": "movie",
+    "title": "Matrix",
+    "original_title": "The Matrix",
+    "tagline": "Crede ce pare incredibil.",
+    "overview": "Thomas Anderson, un hacker cunoscut sub numele de Neo, caută răspunsuri la întrebările care îl macină. Când misterioasa Trinity îl conduce la Morpheus, un om care pare să știe adevărul, Neo descoperă că lumea pe care o știe nu este ceea ce pare și este atras într-o luptă secretă care poate schimba s…",
+    "year": 1999,
+    "released": "1999-03-31",
+    "status": "released",
+    "runtime_min": 136,
+    "genres": [
+     "Acțiune",
+     "SF"
+    ],
+    "countries": [
+     "US"
+    ],
+    "language": "en",
+    "spoken": [
+     "en"
+    ],
+    "ratings": {
+     "community": {
+      "value": 8.3,
+      "votes": 29284
+     }
+    },
+    "age_rating": {
+     "country": "RO",
+     "rating": "15"
+    },
+    "pictures": {
+     "poster": {
+      "s": "https://api.satelit.md/v1/movies/img/s/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+      "m": "https://api.satelit.md/v1/movies/img/m/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+      "l": "https://api.satelit.md/v1/movies/img/l/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg"
+     },
+     "backdrop": {
+      "m": "https://api.satelit.md/v1/movies/img/m/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+      "w": "https://api.satelit.md/v1/movies/img/w/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg"
+     }
+    },
+    "people": {
+     "directors": [
+      {
+       "id": "p9340",
+       "name": "Lana Wachowski"
+      },
+      {
+       "id": "p9339",
+       "name": "Lilly Wachowski"
+      }
+     ],
+     "writers": [
+      {
+       "id": "p9340",
+       "name": "Lana Wachowski"
+      },
+      {
+       "id": "p9339",
+       "name": "Lilly Wachowski"
+      }
+     ],
+     "cast": [
+      {
+       "id": "p6384",
+       "name": "Keanu Reeves",
+       "character": "Neo",
+       "pictures": {
+        "photo": {
+         "s": "https://api.satelit.md/v1/movies/img/s/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg",
+         "m": "https://api.satelit.md/v1/movies/img/m/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg",
+         "l": "https://api.satelit.md/v1/movies/img/l/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        }
+       }
+      },
+      {
+       "id": "p2975",
+       "name": "Laurence Fishburne",
+       "character": "Morpheus",
+       "pictures": {
+        "photo": {
+         "s": "https://api.satelit.md/v1/movies/img/s/2GbXERENPpl5MmlqOLlPVaVtifD.jpg",
+         "m": "https://api.satelit.md/v1/movies/img/m/2GbXERENPpl5MmlqOLlPVaVtifD.jpg",
+         "l": "https://api.satelit.md/v1/movies/img/l/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+        }
+       }
+      },
+      {
+       "id": "p530",
+       "name": "Carrie-Anne Moss",
+       "character": "Trinity",
+       "pictures": {
+        "photo": {
+         "s": "https://api.satelit.md/v1/movies/img/s/9zya72vRZYBQILfetACsnmCBgdj.jpg",
+         "m": "https://api.satelit.md/v1/movies/img/m/9zya72vRZYBQILfetACsnmCBgdj.jpg",
+         "l": "https://api.satelit.md/v1/movies/img/l/9zya72vRZYBQILfetACsnmCBgdj.jpg"
+        }
+       }
+      },
+      "... 12 more"
+     ]
+    },
+    "companies": [
+     "Village Roadshow Pictures",
+     "Warner Bros. Pictures",
+     "Groucho II Film Partnership",
+     "... 1 more"
+    ],
+    "watch": {
+     "country": "RO",
+     "stream": [],
+     "free": [],
+     "rent": [
+      "Amazon Video",
+      "Rakuten TV"
+     ],
+     "buy": [
+      "Amazon Video",
+      "Rakuten TV"
+     ]
+    },
+    "trailers": [],
+    "imdb": "tt0133093",
+    "similar": [
+     {
+      "id": "m18",
+      "kind": "movie",
+      "title": "Al cincilea element",
+      "original_title": "Le Cinquième Élément",
+      "year": 1997,
+      "released": "1997-05-02",
+      "language": "fr",
+      "rating": {
+       "value": 7.6,
+       "votes": 12373
+      },
+      "overview": "În secolul al XXIII-lea, un inamic cosmic amenință Pământul. Salvarea omenirii depinde de o armă străveche care trebuie completată, însă când elementul lipsă ajunge în taxiul lui Korben Dallas, fostul militar este atras fără voie într-o misiune decisivă.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/8nx8sttha1Zidt73SbNncVfSwqk.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/8nx8sttha1Zidt73SbNncVfSwqk.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/8nx8sttha1Zidt73SbNncVfSwqk.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/jW21PoKwqs79wk6bfiYezox63mK.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/jW21PoKwqs79wk6bfiYezox63mK.jpg"
+       }
+      }
+     },
+     {
+      "id": "m19",
+      "kind": "movie",
+      "title": "Metrópolis",
+      "original_title": "Metropolis",
+      "year": 1927,
+      "released": "1927-01-10",
+      "language": "de",
+      "rating": {
+       "value": 8.1,
+       "votes": 3271
+      },
+      "overview": "Într-un oraș viitoresc împărțit strâns între clasa muncitoare și planificatorii orașului, fiul gânditorului orașului se îndrăgostește de o profetă a clasei muncitoare care prezice venirea unui salvator pentru a le media diferențele.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/xjK0ZUGWOsqRIBFBCV9lvu1tNCv.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/xjK0ZUGWOsqRIBFBCV9lvu1tNCv.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/xjK0ZUGWOsqRIBFBCV9lvu1tNCv.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg"
+       }
+      }
+     },
+     {
+      "id": "m217",
+      "kind": "movie",
+      "title": "Indiana Jones și regatul craniului de cristal",
+      "original_title": "Indiana Jones and the Kingdom of the Crystal Skull",
+      "year": 2008,
+      "released": "2008-05-21",
+      "language": "en",
+      "rating": {
+       "value": 6.0,
+       "votes": 9387
+      },
+      "overview": "Cea mai nouă aventură începe în deșertul de Sud-vest, în 1957 - în toiul Războiului Rece. Indy și partenerul lui, Mac abia au scăpat teferi după o confruntare cu agenții sovietici pe un aeroport îndepărtat. Acum, profesorul Jones s-a întors la Colegiul Marshall - doar ca descopere că lucrurile stau …",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/hNqINnYsOlojRXsFh7m6ThuuytC.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/hNqINnYsOlojRXsFh7m6ThuuytC.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/hNqINnYsOlojRXsFh7m6ThuuytC.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/4CzC4lXA2XroGASTTrHCh5av1we.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/4CzC4lXA2XroGASTTrHCh5av1we.jpg"
+       }
+      }
+     },
+     "... 5 more"
+    ],
+    "attribution": null,
+    "money": {
+     "budget_usd": 63000000,
+     "box_office_usd": 467222728
+    },
+    "collection": "Матриця | Колекція"
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/titles/m603/full": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "55",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299757",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "580",
+   "x-ratelimit-reset": "55"
+  },
+  "body": {
+   "data": {
+    "id": "m603",
+    "kind": "movie",
+    "title": "Matrix",
+    "original_title": "The Matrix",
+    "tagline": "Crede ce pare incredibil.",
+    "overview": "Thomas Anderson, un hacker cunoscut sub numele de Neo, caută răspunsuri la întrebările care îl macină. Când misterioasa Trinity îl conduce la Morpheus, un om care pare să știe adevărul, Neo descoperă că lumea pe care o știe nu este ceea ce pare și este atras într-o luptă secretă care poate schimba s…",
+    "year": 1999,
+    "released": "1999-03-31",
+    "status": "released",
+    "runtime_min": 136,
+    "genres": [
+     "Acțiune",
+     "SF"
+    ],
+    "countries": [
+     "US"
+    ],
+    "language": "en",
+    "spoken": [
+     "en"
+    ],
+    "ratings": {
+     "community": {
+      "value": 8.3,
+      "votes": 29284
+     },
+     "imdb": {
+      "value": 8.7,
+      "votes": 2284373
+     },
+     "metacritic": {
+      "value": 73,
+      "votes": null
+     },
+     "rotten_tomatoes": {
+      "value": 83,
+      "votes": null
+     },
+     "kinopoisk": {
+      "value": 8.5,
+      "votes": null
+     }
+    },
+    "age_rating": {
+     "country": "RO",
+     "rating": "15"
+    },
+    "pictures": {
+     "poster": {
+      "s": "https://api.satelit.md/v1/movies/img/s/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+      "m": "https://api.satelit.md/v1/movies/img/m/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+      "l": "https://api.satelit.md/v1/movies/img/l/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg"
+     },
+     "backdrop": {
+      "m": "https://api.satelit.md/v1/movies/img/m/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+      "w": "https://api.satelit.md/v1/movies/img/w/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg"
+     }
+    },
+    "people": {
+     "directors": [
+      {
+       "id": "p9340",
+       "name": "Lana Wachowski"
+      },
+      {
+       "id": "p9339",
+       "name": "Lilly Wachowski"
+      }
+     ],
+     "writers": [
+      {
+       "id": "p9340",
+       "name": "Lana Wachowski"
+      },
+      {
+       "id": "p9339",
+       "name": "Lilly Wachowski"
+      }
+     ],
+     "cast": [
+      {
+       "id": "p6384",
+       "name": "Keanu Reeves",
+       "character": "Neo",
+       "pictures": {
+        "photo": {
+         "s": "https://api.satelit.md/v1/movies/img/s/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg",
+         "m": "https://api.satelit.md/v1/movies/img/m/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg",
+         "l": "https://api.satelit.md/v1/movies/img/l/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+        }
+       }
+      },
+      {
+       "id": "p2975",
+       "name": "Laurence Fishburne",
+       "character": "Morpheus",
+       "pictures": {
+        "photo": {
+         "s": "https://api.satelit.md/v1/movies/img/s/2GbXERENPpl5MmlqOLlPVaVtifD.jpg",
+         "m": "https://api.satelit.md/v1/movies/img/m/2GbXERENPpl5MmlqOLlPVaVtifD.jpg",
+         "l": "https://api.satelit.md/v1/movies/img/l/2GbXERENPpl5MmlqOLlPVaVtifD.jpg"
+        }
+       }
+      },
+      {
+       "id": "p530",
+       "name": "Carrie-Anne Moss",
+       "character": "Trinity",
+       "pictures": {
+        "photo": {
+         "s": "https://api.satelit.md/v1/movies/img/s/9zya72vRZYBQILfetACsnmCBgdj.jpg",
+         "m": "https://api.satelit.md/v1/movies/img/m/9zya72vRZYBQILfetACsnmCBgdj.jpg",
+         "l": "https://api.satelit.md/v1/movies/img/l/9zya72vRZYBQILfetACsnmCBgdj.jpg"
+        }
+       }
+      },
+      "... 12 more"
+     ]
+    },
+    "companies": [
+     "Village Roadshow Pictures",
+     "Warner Bros. Pictures",
+     "Groucho II Film Partnership",
+     "... 1 more"
+    ],
+    "watch": {
+     "country": "RO",
+     "stream": [],
+     "free": [],
+     "rent": [
+      "Amazon Video",
+      "Rakuten TV"
+     ],
+     "buy": [
+      "Amazon Video",
+      "Rakuten TV"
+     ]
+    },
+    "trailers": [
+     {
+      "name": "Матрица (1999) — русский трейлер HD",
+      "type": "trailer",
+      "youtube": "YihPA42fdQ8",
+      "url": "https://www.youtube.com/watch?v=YihPA42fdQ8"
+     },
+     {
+      "name": "Матрица (1999) - Дублир Тизер-Трейлер Open Matte HD",
+      "type": "trailer",
+      "youtube": "4fFWDyOzW6o",
+      "url": "https://www.youtube.com/watch?v=4fFWDyOzW6o"
+     },
+     {
+      "name": "\"מטריקס\" הראשון חוזר לקולנוע | 9.12 בבתי הקולנוע לתקופה מוגבלת",
+      "type": "trailer",
+      "youtube": "6mW7ziWdNjk",
+      "url": "https://www.youtube.com/watch?v=6mW7ziWdNjk"
+     },
+     "... 1 more"
+    ],
+    "imdb": "tt0133093",
+    "similar": [
+     {
+      "id": "m18",
+      "kind": "movie",
+      "title": "Al cincilea element",
+      "original_title": "Le Cinquième Élément",
+      "year": 1997,
+      "released": "1997-05-02",
+      "language": "fr",
+      "rating": {
+       "value": 7.6,
+       "votes": 12373
+      },
+      "overview": "În secolul al XXIII-lea, un inamic cosmic amenință Pământul. Salvarea omenirii depinde de o armă străveche care trebuie completată, însă când elementul lipsă ajunge în taxiul lui Korben Dallas, fostul militar este atras fără voie într-o misiune decisivă.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/8nx8sttha1Zidt73SbNncVfSwqk.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/8nx8sttha1Zidt73SbNncVfSwqk.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/8nx8sttha1Zidt73SbNncVfSwqk.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/jW21PoKwqs79wk6bfiYezox63mK.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/jW21PoKwqs79wk6bfiYezox63mK.jpg"
+       }
+      }
+     },
+     {
+      "id": "m19",
+      "kind": "movie",
+      "title": "Metrópolis",
+      "original_title": "Metropolis",
+      "year": 1927,
+      "released": "1927-01-10",
+      "language": "de",
+      "rating": {
+       "value": 8.1,
+       "votes": 3271
+      },
+      "overview": "Într-un oraș viitoresc împărțit strâns între clasa muncitoare și planificatorii orașului, fiul gânditorului orașului se îndrăgostește de o profetă a clasei muncitoare care prezice venirea unui salvator pentru a le media diferențele.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/xjK0ZUGWOsqRIBFBCV9lvu1tNCv.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/xjK0ZUGWOsqRIBFBCV9lvu1tNCv.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/xjK0ZUGWOsqRIBFBCV9lvu1tNCv.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/eeMoFKxjjiCi6iep2GEZtSAMYIr.jpg"
+       }
+      }
+     },
+     {
+      "id": "m217",
+      "kind": "movie",
+      "title": "Indiana Jones și regatul craniului de cristal",
+      "original_title": "Indiana Jones and the Kingdom of the Crystal Skull",
+      "year": 2008,
+      "released": "2008-05-21",
+      "language": "en",
+      "rating": {
+       "value": 6.0,
+       "votes": 9387
+      },
+      "overview": "Cea mai nouă aventură începe în deșertul de Sud-vest, în 1957 - în toiul Războiului Rece. Indy și partenerul lui, Mac abia au scăpat teferi după o confruntare cu agenții sovietici pe un aeroport îndepărtat. Acum, profesorul Jones s-a întors la Colegiul Marshall - doar ca descopere că lucrurile stau …",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/hNqINnYsOlojRXsFh7m6ThuuytC.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/hNqINnYsOlojRXsFh7m6ThuuytC.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/hNqINnYsOlojRXsFh7m6ThuuytC.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/4CzC4lXA2XroGASTTrHCh5av1we.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/4CzC4lXA2XroGASTTrHCh5av1we.jpg"
+       }
+      }
+     },
+     "... 5 more"
+    ],
+    "attribution": null,
+    "money": {
+     "budget_usd": 63000000,
+     "box_office_usd": 467222728
+    },
+    "collection": "Матриця | Колекція",
+    "moods": {
+     "action": 3,
+     "fear": 3.6,
+     "humor": 0.4,
+     "pace": 4.7,
+     "profanity": 1.2,
+     "romance": 0.6,
+     "sadness": 1,
+     "sex": 0,
+     "violence": 2.3
+    },
+    "questions": [
+     {
+      "q": "Despre ce e filmul „Matrix”?",
+      "a": "Thomas Anderson, un hacker cunoscut sub numele de Neo, caută răspunsuri la întrebările care îl macină. Când misterioasa Trinity îl conduce la Morpheus, un om care pare să știe adevărul, Neo descoperă că lumea pe care o știe nu este ceea ce pare și este atras într-o luptă secretă care poate schimba s…"
+     },
+     {
+      "q": "Cine joacă în filmul „Matrix”?",
+      "a": "Regia: Lana Wachowski și Lilly Wachowski. În rolurile principale: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving și Gloria Foster."
+     },
+     {
+      "q": "Ce note are filmul „Matrix”?",
+      "a": "Notele filmului „Matrix”: IMDb 8,7/10 (2,3M); Kinopoisk 8,5/10; Rotten Tomatoes 83%; Metacritic 73/100. Rotten Tomatoes arată ponderea recenziilor pozitive ale criticilor, iar Metacritic media notelor criticilor, din 100."
+     },
+     "... 6 more"
+    ],
+    "topics": [
+     "Inteligență artificială",
+     "Arte marțiale",
+     "Distopie",
+     "... 2 more"
+    ],
+    "keywords": [
+     "saving the world",
+     "artificial intelligence (a.i.)",
+     "man vs machine",
+     "... 17 more"
+    ],
+    "age_ratings": {
+     "AR": "13",
+     "AU": "M",
+     "BE": "12",
+     "BG": "C",
+     "BR": "12",
+     "CA": "14A",
+     "CZ": "12+",
+     "DE": "16",
+     "DK": "15",
+     "ES": "12",
+     "FI": "K-16",
+     "FR": "TP",
+     "GB": "15",
+     "GR": "K-8",
+     "HK": "IIB",
+     "HU": "16",
+     "ID": "17+",
+     "IE": "15",
+     "IL": "PG",
+     "IN": "A",
+     "IS": "16",
+     "IT": "T",
+     "JP": "PG12",
+     "KR": "12",
+     "MX": "B",
+     "MY": "18SG",
+     "NL": "12",
+     "NO": "15",
+     "NZ": "M",
+     "PL": "16",
+     "PT": "M/12",
+     "RO": "15",
+     "RU": "16+",
+     "SE": "15",
+     "SG": "PG",
+     "SK": "15",
+     "TH": "G",
+     "TR": "13+",
+     "TW": "12+",
+     "UA": "16+",
+     "US": "R"
+    },
+    "soundtrack": {
+     "album": "The Matrix: Music From the Motion Picture",
+     "released": "1999-03-30",
+     "tracks": [
+      {
+       "n": 1,
+       "title": "Rock Is Dead",
+       "artist": "Marilyn Manson",
+       "seconds": 191
+      },
+      {
+       "n": 2,
+       "title": "Spybreak! (Short One)",
+       "artist": "Propellerheads",
+       "seconds": 241
+      },
+      {
+       "n": 3,
+       "title": "Bad Blood",
+       "artist": "Ministry",
+       "seconds": 300
+      },
+      "... 10 more"
+     ]
+    },
+    "after_credits": null,
+    "external": {
+     "imdb_id": "tt0133093",
+     "wikidata_id": "Q83495"
+    },
+    "recommended": [
+     {
+      "id": "m605",
+      "kind": "movie",
+      "title": "Matrix - Revoluții",
+      "original_title": "The Matrix Revolutions",
+      "year": 2003,
+      "released": "2003-11-05",
+      "language": "en",
+      "rating": {
+       "value": 6.8,
+       "votes": 11340
+      },
+      "overview": "În timp ce mașinile pregătesc invazia ultimului oraș al oamenilor liberi, Neo rămâne captiv în Matrix. Trinity și Morpheus încearcă să-l elibereze, dar pe măsură ce războiul se apropie de final, o nouă amenințare pune în pericol ambele tabere, iar Neo poate fi singura șansă de a pune capăt conflictu…",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/iEHJ1CbUBd3dW7yItb5w3g13JFK.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/iEHJ1CbUBd3dW7yItb5w3g13JFK.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/iEHJ1CbUBd3dW7yItb5w3g13JFK.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/533xAMhhVyjTy8hwMUFEt5TuDfR.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/533xAMhhVyjTy8hwMUFEt5TuDfR.jpg"
+       }
+      }
+     },
+     {
+      "id": "m624860",
+      "kind": "movie",
+      "title": "Matrix: Renașterea",
+      "original_title": "The Matrix Resurrections",
+      "year": 2021,
+      "released": "2021-12-16",
+      "language": "en",
+      "rating": {
+       "value": 6.3,
+       "votes": 6875
+      },
+      "overview": "Thomas Anderson, cunoscut cândva drept Neo, duce o viață aparent obișnuită ca creator de jocuri video, convins că experiențele sale din trecut sunt doar rodul imaginației. Când o tânără pe nume Bugs îl îndeamnă să pună la îndoială realitatea în care trăiește, începe să redescopere adevărul despre Ma…",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/uMI2KQ6r6ds4EfCdBL8o7AeDOky.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/uMI2KQ6r6ds4EfCdBL8o7AeDOky.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/uMI2KQ6r6ds4EfCdBL8o7AeDOky.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/eNI7PtK6DEYgZmHWP9gQNuff8pv.jpg"
+       }
+      }
+     },
+     {
+      "id": "m534",
+      "kind": "movie",
+      "title": "Terminator: Salvarea",
+      "original_title": "Terminator Salvation",
+      "year": 2009,
+      "released": "2009-05-20",
+      "language": "en",
+      "rating": {
+       "value": 6.1,
+       "votes": 7364
+      },
+      "overview": "Christian Bale este John Connor, omul sortit să conducă rasa umană în războiul contra terminatorilor, într-un post-apocaliptic an 2018. Dar viitorul în care s-a obișnuit să creadă Connor este schimbat în parte de apariția lui Marcus Wright (Sam Worthington), un străin ale cărui ultime amintiri îl în…",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/4s1iN3sVovYUtck4geJJg3kvAHv.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/4s1iN3sVovYUtck4geJJg3kvAHv.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/4s1iN3sVovYUtck4geJJg3kvAHv.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/l2bAhg1h3eJrXiIZv8v2uMkuQPF.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/l2bAhg1h3eJrXiIZv8v2uMkuQPF.jpg"
+       }
+      }
+     },
+     "... 5 more"
+    ]
+   },
+   "meta": {
+    "credits": 55,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/titles/m603/showtimes": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299717",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "579",
+   "x-ratelimit-reset": "52"
+  },
+  "body": {
+   "data": {
+    "id": "m603",
+    "country": "MD",
+    "cinemas": [],
+    "countries": []
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/discover?sort=rating": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299677",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "578",
+   "x-ratelimit-reset": "52"
+  },
+  "body": {
+   "data": {
+    "page": 1,
+    "pages": 500,
+    "total": 15198,
+    "results": [
+     {
+      "id": "m1560520",
+      "kind": "movie",
+      "title": "Batman: Knightfall Part 1: Knightfall",
+      "original_title": "Batman: Knightfall Part 1: Knightfall",
+      "year": 2026,
+      "released": "2026-06-23",
+      "language": "en",
+      "rating": {
+       "value": 9.1,
+       "votes": 512
+      },
+      "overview": "Azilul Arkham a fost distrus, iar toți deținuții săi au fost dezlănțuiți asupra orașului Gotham. În timp ce Batman se grăbește să-i adune pe unii dintre cei mai mari dușmani ai săi, este împins la limitele sale fizice și mentale și se confruntă cu o nouă amenințare: omul pe nume Bane!",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/xk5RsHiJ12UY21WadVCHwZJCiif.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/xk5RsHiJ12UY21WadVCHwZJCiif.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/xk5RsHiJ12UY21WadVCHwZJCiif.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/caBIySpwuFi2i7ynvHIlnxJLOdN.jpg"
+       }
+      },
+      "genres": [
+       "Animaţie",
+       "Acțiune",
+       "Aventuri",
+       "... 1 more"
+      ]
+     },
+     {
+      "id": "m980431",
+      "kind": "movie",
+      "title": "Avatar Aang: Ultimul războinic al aerului",
+      "original_title": "Avatar Aang: The Last Airbender",
+      "year": 2026,
+      "released": "2026-07-24",
+      "language": "en",
+      "rating": {
+       "value": 9.0,
+       "votes": 1457
+      },
+      "overview": "Când Avatar Aang, ultimul Airbender din lume, descoperă o putere străveche care i-ar putea salva cultura de la dispariție, el și prietenii săi încep o cursă contra cronometru pentru a o găsi înainte ca aceasta să cadă în mâini greșite.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/8iTfWI9o8AfKOhGR8deK4EsWu6O.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/8iTfWI9o8AfKOhGR8deK4EsWu6O.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/8iTfWI9o8AfKOhGR8deK4EsWu6O.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/5kT7HfK2xhwCyG8hHNLwbCjRq3e.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/5kT7HfK2xhwCyG8hHNLwbCjRq3e.jpg"
+       }
+      },
+      "genres": [
+       "Animaţie",
+       "Aventuri",
+       "Fantasy",
+       "... 1 more"
+      ]
+     },
+     {
+      "id": "m753230",
+      "kind": "movie",
+      "title": "The Three Deaths of Marisela Escobedo",
+      "original_title": "Las tres muertes de Marisela Escobedo",
+      "year": 2020,
+      "released": "2020-10-14",
+      "language": "es",
+      "rating": {
+       "value": 8.8,
+       "votes": 246
+      },
+      "overview": null,
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/4E7nNHIchHWzpETfwAERxFuviO6.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/4E7nNHIchHWzpETfwAERxFuviO6.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/4E7nNHIchHWzpETfwAERxFuviO6.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/vrx9KIwXm7nxz49Fs9iTjPgxq7A.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/vrx9KIwXm7nxz49Fs9iTjPgxq7A.jpg"
+       }
+      },
+      "genres": [
+       "Documentar",
+       "Crimă"
+      ]
+     },
+     "... 17 more"
+    ]
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/trending": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299637",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "577",
+   "x-ratelimit-reset": "51"
+  },
+  "body": {
+   "data": {
+    "page": 1,
+    "pages": 500,
+    "total": 10000,
+    "results": [
+     {
+      "id": "m1368337",
+      "kind": "movie",
+      "title": "Odiseea",
+      "original_title": "The Odyssey",
+      "year": 2026,
+      "released": "2026-07-15",
+      "language": "en",
+      "rating": {
+       "value": 8.0,
+       "votes": 5139
+      },
+      "overview": "Povestea lui Odysseus în călătoria sa periculoasă spre casă după Războiul Troian, prezentând întâlnirile sale cu Polyphemus, Sirenele, Circe și terminând cu reîntâlnirea cu soția sa, Penelope.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/iUo221sZEtDOtR50BOtuuG56ljk.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/iUo221sZEtDOtR50BOtuuG56ljk.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/iUo221sZEtDOtR50BOtuuG56ljk.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/RMXG8myu1aGlNUsRjtxzmpdMK0.jpg"
+       }
+      },
+      "genres": [
+       "Aventuri",
+       "Acțiune",
+       "Fantasy"
+      ]
+     },
+     {
+      "id": "m1300968",
+      "kind": "movie",
+      "title": "Jocurile foamei: Răsăritul în ziua extragerii",
+      "original_title": "The Hunger Games: Sunrise on the Reaping",
+      "year": 2026,
+      "released": "2026-11-18",
+      "language": "en",
+      "rating": {
+       "value": 7.5,
+       "votes": 42
+      },
+      "overview": "Cu 24 de ani înaintea evenimentelor din seria originală și a poveștii lui Katniss Everdeen, „Jocurile Foamei: Răsăritul în ziua extragerii” ne poartă înapoi în Panem, în dimineața celei de-a 50-a ediții a Jocurilor Foamei, cunoscută și sub numele de Al Doilea Jubileu al Pacificării (Second Quarter Q…",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/eCt5HRuJlt4BrO2Nf7rst2cg2Tp.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/eCt5HRuJlt4BrO2Nf7rst2cg2Tp.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/eCt5HRuJlt4BrO2Nf7rst2cg2Tp.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/aqFZcr2dxSZ2UwWSo1WC6C0rwDf.jpg"
+       }
+      },
+      "genres": [
+       "SF",
+       "Acțiune",
+       "Aventuri"
+      ]
+     },
+     {
+      "id": "m1003596",
+      "kind": "movie",
+      "title": "Răzbunătorii: Ziua osândei",
+      "original_title": "Avengers: Doomsday",
+      "year": 2026,
+      "released": "2026-12-16",
+      "language": "en",
+      "rating": null,
+      "overview": "Eroi îndrăgiți din trei universuri distincte sunt pe un curs de coliziune mortal și se confruntă cu o amenințare existențială precum nu au mai întâlnit niciodată.",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/5pOEr3ypuPhrXACdeesHj01VAM8.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/5pOEr3ypuPhrXACdeesHj01VAM8.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/5pOEr3ypuPhrXACdeesHj01VAM8.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/s4v0UX1anfXm0UvloLsTTJ4v222.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/s4v0UX1anfXm0UvloLsTTJ4v222.jpg"
+       }
+      },
+      "genres": [
+       "SF",
+       "Acțiune",
+       "Aventuri"
+      ]
+     },
+     "... 17 more"
+    ]
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/cinema": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299597",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "576",
+   "x-ratelimit-reset": "50"
+  },
+  "body": {
+   "data": {
+    "page": 1,
+    "pages": 1,
+    "total": 2,
+    "results": [
+     {
+      "id": "m1381071",
+      "kind": "movie",
+      "title": "Godzilla Minus Zero",
+      "original_title": "ゴジラ-0.0",
+      "year": 2026,
+      "released": "2026-11-06",
+      "language": "ja",
+      "rating": {
+       "value": 7.7,
+       "votes": 264
+      },
+      "overview": "Această continuare are loc în 1949, la doi ani după evenimentele din filmul original. Filmat de data asta în format IMAX, Takashi Yamazaki, artist de efecte vizuale premiat cu Oscar și regizor, îi readuce pe Ryunosuke Kamiki și Minami Hamabe în rolurile lor, în timp ce familia Shikishima se confrunt…",
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/dQ1VgCHcXSYiIt21pM5yf9stKir.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/dQ1VgCHcXSYiIt21pM5yf9stKir.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/dQ1VgCHcXSYiIt21pM5yf9stKir.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/oqrYIDH4tvfEzPe1yqT4jzmAWHQ.jpg"
+       }
+      },
+      "genres": [
+       "SF",
+       "Horror",
+       "Acțiune"
+      ]
+     },
+     {
+      "id": "m1719089",
+      "kind": "movie",
+      "title": "Mama",
+      "original_title": "Mama",
+      "year": 2026,
+      "released": "2026-11-07",
+      "language": "ro",
+      "rating": null,
+      "overview": null,
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/13vZSmYKFtGfQlN4eBkFKVAkvmk.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/13vZSmYKFtGfQlN4eBkFKVAkvmk.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/13vZSmYKFtGfQlN4eBkFKVAkvmk.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/jiqtnExtJGIe50C4fp3ZECaxW7Y.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/jiqtnExtJGIe50C4fp3ZECaxW7Y.jpg"
+       }
+      },
+      "genres": [
+       "Dramă"
+      ]
+     }
+    ],
+    "dates": {
+     "maximum": "2026-11-25",
+     "minimum": "2026-10-14"
+    }
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/cinemas": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299557",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "575",
+   "x-ratelimit-reset": "49"
+  },
+  "body": {
+   "data": {
+    "coverage": {
+     "country": "MD",
+     "chains": 2,
+     "cinemas": 4,
+     "cinemas_with_sessions": 3,
+     "cities": 2,
+     "sessions": 109,
+     "films": 9,
+     "first_day": "2026-11-19",
+     "last_day": "2026-11-22",
+     "read_at": "2026-11-19T03:06:19Z"
+    },
+    "cinemas": [
+     {
+      "id": "c3966341138",
+      "name": "Cineplex Mall",
+      "chain": "Cineplex",
+      "city": "Chișinău",
+      "address": "Arborilor 21, 4th floor, Shopping Malldova",
+      "screens": 6,
+      "lat": null,
+      "lon": null,
+      "sessions": 77,
+      "first_day": "2026-11-19",
+      "last_day": "2026-11-22"
+     },
+     {
+      "id": "c789032329",
+      "name": "Cineplex Balti",
+      "chain": "Cineplex",
+      "city": "Bălți",
+      "address": "Nicolae Iorga 5, 2nd floor, EVIMALL",
+      "screens": 3,
+      "lat": null,
+      "lon": null,
+      "sessions": 24,
+      "first_day": "2026-11-19",
+      "last_day": "2026-11-22"
+     },
+     {
+      "id": "c4166880888",
+      "name": "Cineplex Loteanu",
+      "chain": "Cineplex",
+      "city": "Chișinău",
+      "address": "Stefan cel Mare, 103",
+      "screens": 3,
+      "lat": null,
+      "lon": null,
+      "sessions": 8,
+      "first_day": "2026-11-19",
+      "last_day": "2026-11-22"
+     },
+     "... 1 more"
+    ]
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/cinemas/today": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299517",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "574",
+   "x-ratelimit-reset": "49"
+  },
+  "body": {
+   "data": {
+    "country": "MD",
+    "day": "2026-11-19",
+    "cinemas": [
+     {
+      "cinema": {
+       "id": "c3966341138",
+       "name": "Cineplex Mall",
+       "chain": "Cineplex",
+       "city": "Chișinău",
+       "address": "Arborilor 21, 4th floor, Shopping Malldova",
+       "screens": 6,
+       "lat": null,
+       "lon": null,
+       "sessions": 77,
+       "first_day": "2026-11-19",
+       "last_day": "2026-11-22"
+      },
+      "films": [
+       {
+        "id": "m1794494",
+        "kind": "movie",
+        "title": "Badanta",
+        "original_title": "Badanta",
+        "year": 2026,
+        "released": "2026-10-01",
+        "language": "ro",
+        "rating": null,
+        "overview": "Valea leaves for Italy to earn money for an apartment, but Valera loses the family's savings. Desperate to hide the truth, he heads to Italy and gets caught up with Italian mobsters, precious stones, and total chaos.",
+        "pictures": {
+         "poster": {
+          "s": "https://api.satelit.md/v1/movies/img/s/4F4r5hZpiuWscSBe3MtcmBcSzg5.jpg",
+          "m": "https://api.satelit.md/v1/movies/img/m/4F4r5hZpiuWscSBe3MtcmBcSzg5.jpg",
+          "l": "https://api.satelit.md/v1/movies/img/l/4F4r5hZpiuWscSBe3MtcmBcSzg5.jpg"
+         }
+        },
+        "listed_title": "Badanta",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "10:10",
+          "hall": "Sala 6",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ro",
+          "language": "RO Dublat RO",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "11:10",
+          "hall": "Sala 2",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ro",
+          "language": "RO Dublat RO",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "13:10",
+          "hall": "Sala 2",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ro",
+          "language": "RO Dublat RO",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         "... 5 more"
+        ]
+       },
+       {
+        "id": "m1263337",
+        "kind": "movie",
+        "title": "În inima sălbăticiei",
+        "original_title": "Heart of the Beast",
+        "year": 2026,
+        "released": "2026-09-19",
+        "language": "en",
+        "rating": {
+         "value": 7.7,
+         "votes": 978
+        },
+        "overview": "După un accident aviatic cumplit, un ofițer din Forțele Speciale și câinele său de luptă se trezesc blocați în adâncul sălbăticiei din Alaska. Împreună, sunt nevoiți să ducă o luptă brutală pentru supraviețuire împotriva forțelor naturii.",
+        "pictures": {
+         "poster": {
+          "s": "https://api.satelit.md/v1/movies/img/s/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
+          "m": "https://api.satelit.md/v1/movies/img/m/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
+          "l": "https://api.satelit.md/v1/movies/img/l/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg"
+         },
+         "backdrop": {
+          "m": "https://api.satelit.md/v1/movies/img/m/nlqHh1zGH8HYERr4eRICN9ligk.jpg",
+          "w": "https://api.satelit.md/v1/movies/img/w/nlqHh1zGH8HYERr4eRICN9ligk.jpg"
+         }
+        },
+        "listed_title": "În inima sălbăticiei",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "10:30",
+          "hall": "Sala 3",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ru",
+          "language": "RU Dublat RU",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "21:30",
+          "hall": "Sala 3",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ru",
+          "language": "RU Dublat RU",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         }
+        ]
+       },
+       {
+        "id": null,
+        "kind": "movie",
+        "title": "Chisinau, My Love",
+        "year": null,
+        "rating": null,
+        "pictures": null,
+        "listed_title": "Chisinau, My Love",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "11:50",
+          "hall": "Sala 1",
+          "formats": [
+           "2D"
+          ],
+          "audio": "en",
+          "language": "EN Subtitrat EN-RO",
+          "subtitles": "ro",
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "13:50",
+          "hall": "Sala 4",
+          "formats": [
+           "2D"
+          ],
+          "audio": "en",
+          "language": "EN Subtitrat EN-RO",
+          "subtitles": "ro",
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "18:30",
+          "hall": "Sala 4",
+          "formats": [
+           "2D"
+          ],
+          "audio": "en",
+          "language": "EN Subtitrat EN-RO",
+          "subtitles": "ro",
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         "... 1 more"
+        ]
+       },
+       "... 5 more"
+      ]
+     },
+     {
+      "cinema": {
+       "id": "c789032329",
+       "name": "Cineplex Balti",
+       "chain": "Cineplex",
+       "city": "Bălți",
+       "address": "Nicolae Iorga 5, 2nd floor, EVIMALL",
+       "screens": 3,
+       "lat": null,
+       "lon": null,
+       "sessions": 24,
+       "first_day": "2026-11-19",
+       "last_day": "2026-11-22"
+      },
+      "films": [
+       {
+        "id": "m438631",
+        "kind": "movie",
+        "title": "Dune",
+        "original_title": "Dune",
+        "year": 2021,
+        "released": "2021-09-15",
+        "language": "en",
+        "rating": {
+         "value": 7.8,
+         "votes": 15990
+        },
+        "overview": "Paul Atreides, un tânăr strălucit și talentat născut cu un mare destin, dincolo de capacitatea lui de înțelegere, trebuie să călătorească pe cea mai periculoasă planetă din univers pentru a asigura viitorul familiei și poporului său. Pe măsură ce forțe malefice intră în conflict pentru monopolul asu…",
+        "pictures": {
+         "poster": {
+          "s": "https://api.satelit.md/v1/movies/img/s/h7Q20HftAApY3VXlfCyeNIuZWg0.jpg",
+          "m": "https://api.satelit.md/v1/movies/img/m/h7Q20HftAApY3VXlfCyeNIuZWg0.jpg",
+          "l": "https://api.satelit.md/v1/movies/img/l/h7Q20HftAApY3VXlfCyeNIuZWg0.jpg"
+         },
+         "backdrop": {
+          "m": "https://api.satelit.md/v1/movies/img/m/h61Kc0NC7d90jNwXfBx5js7DnSQ.jpg",
+          "w": "https://api.satelit.md/v1/movies/img/w/h61Kc0NC7d90jNwXfBx5js7DnSQ.jpg"
+         }
+        },
+        "listed_title": "Dune",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "10:40",
+          "hall": "Sala 3",
+          "formats": [
+           "3D"
+          ],
+          "audio": "ru",
+          "language": "RU Dublat EN-RO,RU",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "16:00",
+          "hall": "Sala 3",
+          "formats": [
+           "3D"
+          ],
+          "audio": "ru",
+          "language": "RU Dublat EN-RO,RU",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         }
+        ]
+       },
+       {
+        "id": "m1465063",
+        "kind": "movie",
+        "title": "Insula pierdută",
+        "original_title": "Forgotten Island",
+        "year": 2026,
+        "released": "2026-09-10",
+        "language": "en",
+        "rating": {
+         "value": 8.1,
+         "votes": 267
+        },
+        "overview": "Jo și Raissa, absolvente de liceu, sunt cele mai bune prietene încă din școala primară, dar se pregătesc acum să pornească pe drumuri diferite în viață. În timp ce își petrec ultima seară împreună, Jo și Raissa descoperă din întâmplare un portal misterios, care le transportă pe fantastica insulă Nak…",
+        "pictures": {
+         "poster": {
+          "s": "https://api.satelit.md/v1/movies/img/s/Lr0Ng7Gg02RW1AyfYEL6P0WUvd.jpg",
+          "m": "https://api.satelit.md/v1/movies/img/m/Lr0Ng7Gg02RW1AyfYEL6P0WUvd.jpg",
+          "l": "https://api.satelit.md/v1/movies/img/l/Lr0Ng7Gg02RW1AyfYEL6P0WUvd.jpg"
+         },
+         "backdrop": {
+          "m": "https://api.satelit.md/v1/movies/img/m/iU2RVy0G99XoDSUHvcQomtif5nP.jpg",
+          "w": "https://api.satelit.md/v1/movies/img/w/iU2RVy0G99XoDSUHvcQomtif5nP.jpg"
+         }
+        },
+        "listed_title": "Insula pierdută",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "11:40",
+          "hall": "Sala 1",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ro",
+          "language": "RO Dublat RO",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         }
+        ]
+       },
+       {
+        "id": null,
+        "kind": "movie",
+        "title": "Cum să spargi o bancă",
+        "year": null,
+        "rating": null,
+        "pictures": null,
+        "listed_title": "Cum să spargi o bancă",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "14:00",
+          "hall": "Sala 1",
+          "formats": [
+           "2D"
+          ],
+          "audio": "en",
+          "language": "EN Subtitrat EN-RO",
+          "subtitles": "ro",
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "18:30",
+          "hall": "Sala 1",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ru",
+          "language": "RU Dublat EN-RO,RU",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         },
+         {
+          "date": "2026-11-19",
+          "time": "20:50",
+          "hall": "Sala 1",
+          "formats": [
+           "2D"
+          ],
+          "audio": "ru",
+          "language": "RU Dublat EN-RO,RU",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "cinema": {
+       "id": "c4166880888",
+       "name": "Cineplex Loteanu",
+       "chain": "Cineplex",
+       "city": "Chișinău",
+       "address": "Stefan cel Mare, 103",
+       "screens": 3,
+       "lat": null,
+       "lon": null,
+       "sessions": 8,
+       "first_day": "2026-11-19",
+       "last_day": "2026-11-22"
+      },
+      "films": [
+       {
+        "id": "m1477104",
+        "kind": "movie",
+        "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+        "original_title": "Shaun the Sheep: The Beast of Mossy Bottom",
+        "year": 2026,
+        "released": "2026-09-17",
+        "language": "en",
+        "rating": {
+         "value": 7.3,
+         "votes": 62
+        },
+        "overview": "On Halloween Eve at Mossy Bottom Farm, excitement turns to dismay when the clumsy Farmer ruins the pumpkin patch. Shaun tries fixing it with science experiments, but things go awry when a wild beast appears in the woods.",
+        "pictures": {
+         "poster": {
+          "s": "https://api.satelit.md/v1/movies/img/s/gayX49siwXf8eNs16rtk1fI91Ey.jpg",
+          "m": "https://api.satelit.md/v1/movies/img/m/gayX49siwXf8eNs16rtk1fI91Ey.jpg",
+          "l": "https://api.satelit.md/v1/movies/img/l/gayX49siwXf8eNs16rtk1fI91Ey.jpg"
+         },
+         "backdrop": {
+          "m": "https://api.satelit.md/v1/movies/img/m/iUFQd0mzDOUCsc8qVwUcNhFIe2P.jpg",
+          "w": "https://api.satelit.md/v1/movies/img/w/iUFQd0mzDOUCsc8qVwUcNhFIe2P.jpg"
+         }
+        },
+        "listed_title": "Mielul Shaun - Aventuri de Halloween",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "11:50",
+          "hall": "Sala 4",
+          "formats": [
+           "2D"
+          ],
+          "audio": null,
+          "language": "Dublat",
+          "subtitles": null,
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         }
+        ]
+       },
+       {
+        "id": null,
+        "kind": "movie",
+        "title": "Ebenezer: O poveste de Craciun",
+        "year": null,
+        "rating": null,
+        "pictures": null,
+        "listed_title": "Ebenezer: O poveste de Craciun",
+        "sessions": [
+         {
+          "date": "2026-11-19",
+          "time": "13:20",
+          "hall": "Sala 2",
+          "formats": [
+           "2D"
+          ],
+          "audio": "en",
+          "language": "EN Subtitrat EN-RO",
+          "subtitles": "ro",
+          "price": null,
+          "currency": null,
+          "sold_out": false,
+          "booking_url": null
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "coverage": {
+     "country": "MD",
+     "chains": 2,
+     "cinemas": 4,
+     "cinemas_with_sessions": 3,
+     "cities": 2,
+     "sessions": 109,
+     "films": 9,
+     "first_day": "2026-11-19",
+     "last_day": "2026-11-22",
+     "read_at": "2026-11-19T03:06:19Z"
+    }
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/genres": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299517",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "573",
+   "x-ratelimit-reset": "49"
+  },
+  "body": {
+   "data": {
+    "kind": "movie",
+    "genres": [
+     {
+      "id": 28,
+      "name": "Acțiune"
+     },
+     {
+      "id": 12,
+      "name": "Aventuri"
+     },
+     {
+      "id": 16,
+      "name": "Animaţie"
+     },
+     "... 16 more"
+    ]
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/movies/people/p6384": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "40",
+   "x-credits-limit": "300000",
+   "x-credits-remaining": "299477",
+   "x-credits-reset": "2026-12-19T16:41:51+02:00",
+   "x-ratelimit-limit": "600",
+   "x-ratelimit-remaining": "572",
+   "x-ratelimit-reset": "49"
+  },
+  "body": {
+   "data": {
+    "id": "p6384",
+    "kind": "person",
+    "name": "Keanu Reeves",
+    "known_for": "Acting",
+    "born": "1964-09-02",
+    "died": null,
+    "birthplace": "Beirut, Lebanon",
+    "biography": "Născut la Beirut, capitala Libanului, în 1964, Keanu Charles Reeves (pronunția corectă a numelui fiind kay-ah-noo), și-a început cariera de actor la 9 ani în piesa de teatru Damn Yankees. Debutul în televiziune a venit o dată cu apariția serialului Hangin' In al CBC Television. După numeroase apariț…",
+    "imdb": "nm0000206",
+    "pictures": {
+     "photo": {
+      "s": "https://api.satelit.md/v1/movies/img/s/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg",
+      "m": "https://api.satelit.md/v1/movies/img/m/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg",
+      "l": "https://api.satelit.md/v1/movies/img/l/8RZLOyYGsoRe9p44q3xin9QkMHv.jpg"
+     }
+    },
+    "work": [
+     {
+      "id": "m603",
+      "kind": "movie",
+      "title": "Matrix",
+      "original_title": "The Matrix",
+      "year": 1999,
+      "released": "1999-03-31",
+      "language": "en",
+      "rating": {
+       "value": 8.3,
+       "votes": 29284
+      },
+      "overview": null,
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/fvCgaMLmIcGTAGgWfunRHMyMDOW.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/tlm8UkiQsitc8rSuIAscQDCnP8d.jpg"
+       }
+      },
+      "role": "Neo"
+     },
+     {
+      "id": "m245891",
+      "kind": "movie",
+      "title": "John Wick",
+      "original_title": "John Wick",
+      "year": 2014,
+      "released": "2014-10-16",
+      "language": "en",
+      "rating": {
+       "value": 7.5,
+       "votes": 21636
+      },
+      "overview": null,
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/rP7X52bxOEBc09h5qzHJnHXxE3C.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/rP7X52bxOEBc09h5qzHJnHXxE3C.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/rP7X52bxOEBc09h5qzHJnHXxE3C.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/ff2ti5DkA9UYLzyqhQfI2kZqEuh.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/ff2ti5DkA9UYLzyqhQfI2kZqEuh.jpg"
+       }
+      },
+      "role": "John Wick"
+     },
+     {
+      "id": "m324552",
+      "kind": "movie",
+      "title": "John Wick 2",
+      "original_title": "John Wick: Chapter 2",
+      "year": 2017,
+      "released": "2017-02-08",
+      "language": "en",
+      "rating": {
+       "value": 7.3,
+       "votes": 14850
+      },
+      "overview": null,
+      "pictures": {
+       "poster": {
+        "s": "https://api.satelit.md/v1/movies/img/s/1QOlwRxKa10Icyc2COEOmDB9KuJ.jpg",
+        "m": "https://api.satelit.md/v1/movies/img/m/1QOlwRxKa10Icyc2COEOmDB9KuJ.jpg",
+        "l": "https://api.satelit.md/v1/movies/img/l/1QOlwRxKa10Icyc2COEOmDB9KuJ.jpg"
+       },
+       "backdrop": {
+        "m": "https://api.satelit.md/v1/movies/img/m/r17jFHAemzcWPPtoO0UxjIX0xas.jpg",
+        "w": "https://api.satelit.md/v1/movies/img/w/r17jFHAemzcWPPtoO0UxjIX0xas.jpg"
+       }
+      },
+      "role": "John Wick"
+     },
+     "... 27 more"
+    ],
+    "attribution": null
+   },
+   "meta": {
+    "credits": 40,
+    "updated_at": null,
+    "sources": [
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     }
+    ],
+    "attribution": null
+   }
+  }
+ },
+ "/products": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0"
+  },
+  "body": {
+   "data": {
+    "products": [
+     {
+      "key": "rates",
+      "state": "open",
+      "freshness": "daily 13:00",
+      "endpoints": [
+       {
+        "path": "/v1/rates",
+        "credits": 1
+       },
+       {
+        "path": "/v1/rates/history",
+        "credits": 1,
+        "per_days": 30
+       }
+      ],
+      "sources": [
+       {
+        "name": "BNM",
+        "url": "https://www.bnm.md/ro/content/ratele-de-schimb",
+        "license": "CC BY 4.0",
+        "attribution": "Sursa: Banca Națională a Moldovei, bnm.md, CC BY 4.0",
+        "notice": "Aceleași date sunt gratuite la bnm.md."
+       }
+      ]
+     },
+     {
+      "key": "fuel",
+      "state": "open",
+      "freshness": "daily",
+      "endpoints": [
+       {
+        "path": "/v1/fuel",
+        "credits": 1
+       },
+       {
+        "path": "/v1/fuel/stations",
+        "credits": 5,
+        "per_rows": 100
+       },
+       {
+        "path": "/v1/fuel/history",
+        "credits": 2,
+        "per_days": 30
+       }
+      ],
+      "sources": [
+       {
+        "name": "ANRE",
+        "url": "https://anre.md",
+        "license": "Public data of ANRE"
+       }
+      ]
+     },
+     {
+      "key": "tariffs",
+      "state": "open",
+      "freshness": "on change",
+      "endpoints": [
+       {
+        "path": "/v1/tariffs",
+        "credits": 1
+       }
+      ],
+      "sources": [
+       {
+        "name": "ANRE",
+        "url": "https://anre.md",
+        "license": "Public data of ANRE"
+       }
+      ]
+     },
+     "... 29 more"
+    ],
+    "shops": {
+     "open": 88,
+     "offers": 1485482
+    },
+    "downloads": [
+     {
+      "product": "places",
+      "url": "https://api.satelit.md/downloads/places-osm.ndjson.gz",
+      "license": "ODbL 1.0, © OpenStreetMap contributors"
+     }
+    ]
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": null,
+    "sources": [],
+    "attribution": "Date: Satelit (satelit.md)"
+   }
+  }
+ },
+ "/plans": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0"
+  },
+  "body": {
+   "data": {
+    "plans": [
+     {
+      "key": "start",
+      "name": "Start",
+      "price": 190,
+      "credits": 5000,
+      "per_minute": 30,
+      "keys": 1,
+      "apps": 1,
+      "webhooks": 0,
+      "history_days": 30,
+      "news": {
+       "delay_hours": 0,
+       "fields": "summary",
+       "search_days": 30,
+       "social": false
+      },
+      "attribution": true,
+      "contract": false,
+      "feed": false,
+      "export": false,
+      "pack_price": null
+     },
+     {
+      "key": "creator",
+      "name": "Creator",
+      "price": 590,
+      "credits": 30000,
+      "per_minute": 120,
+      "keys": 3,
+      "apps": 3,
+      "webhooks": 2,
+      "history_days": 90,
+      "news": {
+       "delay_hours": 0,
+       "fields": "summary",
+       "search_days": 90,
+       "social": false
+      },
+      "attribution": true,
+      "contract": false,
+      "feed": false,
+      "export": false,
+      "pack_price": 240
+     },
+     {
+      "key": "pro",
+      "name": "Pro",
+      "price": 1990,
+      "credits": 300000,
+      "per_minute": 600,
+      "keys": 10,
+      "apps": 10,
+      "webhooks": 10,
+      "history_days": 365,
+      "news": {
+       "delay_hours": 0,
+       "fields": "full",
+       "search_days": null,
+       "social": true
+      },
+      "attribution": false,
+      "contract": false,
+      "feed": false,
+      "export": false,
+      "pack_price": 90
+     },
+     "... 2 more"
+    ],
+    "pack": 10000,
+    "packs_max": 50,
+    "recommended": "pro",
+    "currency": "MDL",
+    "year_months": 10
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": null,
+    "sources": [],
+    "attribution": "Date: Satelit (satelit.md)"
+   }
+  }
+ },
+ "/status": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0"
+  },
+  "body": {
+   "data": {
+    "ok": true,
+    "products": [
+     {
+      "key": "rates",
+      "updated_at": "2026-11-19T16:36:34+02:00",
+      "stale": false
+     },
+     {
+      "key": "fuel",
+      "updated_at": "2026-11-19T16:36:34+02:00",
+      "stale": false
+     },
+     {
+      "key": "tariffs",
+      "updated_at": "2026-11-19T16:36:34+02:00",
+      "stale": false
+     },
+     "... 23 more"
+    ]
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": null,
+    "sources": [],
+    "attribution": "Date: Satelit (satelit.md)"
+   }
+  }
+ },
+ "/stats": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0"
+  },
+  "body": {
+   "data": {
+    "counts": {
+     "products": 1254142,
+     "price_points": 4857728,
+     "price_history_from": "2026-10-28",
+     "ads_live": 809546,
+     "ads_native": 0,
+     "tours_offers": 16001,
+     "tours_agencies": 5,
+     "tours_countries": 22,
+     "flights_destinations": 48,
+     "flights_per_week": 316,
+     "fares_cities": 80,
+     "rest_places": 1450,
+     "estate_listings": 21606,
+     "estate_cities": 16,
+     "news_rows": 7146,
+     "news_articles": 449,
+     "news_outlets": 40,
+     "news_from": "2026-10-02",
+     "news_events": 5449,
+     "news_comments_judged": 12568,
+     "acts": 110550,
+     "acts_issuers": 204,
+     "acts_from": "1961-04-24",
+     "citizenship_dossiers": 909455,
+     "citizenship_orders": 5666,
+     "citizenship_lists": 137,
+     "citizenship_from": "2018-01-30",
+     "fuel_networks": 82,
+     "fuel_stations": 586,
+     "currencies": 5,
+     "rates_from": "2026-08-06",
+     "tariffs": 7,
+     "recipes": 70,
+     "shops": 7654,
+     "venues": 3497,
+     "chain_shops": 2745,
+     "chains": 89,
+     "court_hearings": 3467618,
+     "court_cases": 1249608,
+     "court_decisions": 320563,
+     "court_judges": 569,
+     "courts_read": 18,
+     "court_hearings_from": "2001-10-25",
+     "companies": 170782,
+     "companies_active": 120170,
+     "company_contracts": 76978,
+     "companies_with_site": 789,
+     "company_licences": 197,
+     "company_licences_active": 105,
+     "company_notices": 6824,
+     "company_notices_from": "2026-01-02",
+     "deals": 300,
+     "deals_stores": 8,
+     "indexes_basket_items": 18,
+     "indexes_groups": 17,
+     "jokes": 180,
+     "jokes_topics": 29,
+     "insurers": 9,
+     "insurance_tariffs": 3,
+     "delivery_stores": 51,
+     "delivery_cities": 13,
+     "geo_streets": 78081,
+     "geo_houses": 974438,
+     "catalog_categories": 25,
+     "catalog_departments": 12,
+     "catalog_subcategories": 85,
+     "catalog_leaves": 464,
+     "movies_films": 691692,
+     "movies_series": 126355,
+     "movies_people": 1804091,
+     "movies_pictures": 1492321,
+     "movies_episodes": 84521,
+     "as_of": "2026-11-19",
+     "shops_open": 88,
+     "offers": 1485482
+    },
+    "updated_at": "2026-11-19T16:21:38+02:00"
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": "2026-11-19T16:21:38+02:00",
+    "sources": [],
+    "attribution": "Date: Satelit (satelit.md)"
+   }
+  }
+ },
+ "/sample": {
+  "status": 200,
+  "headers": {
+   "x-credits-cost": "0",
+   "x-ratelimit-limit": "60",
+   "x-ratelimit-remaining": "59",
+   "x-ratelimit-reset": "61"
+  },
+  "body": {
+   "data": {
+    "rates": [
+     {
+      "code": "EUR",
+      "name": "Euro",
+      "value": 20.1411,
+      "nominal": 1,
+      "date": "2026-11-19",
+      "change_7d_pct": -0.1,
+      "change_30d_pct": 0.2
+     },
+     {
+      "code": "USD",
+      "name": "Dolar SUA",
+      "value": 18.3744,
+      "nominal": 1,
+      "date": "2026-11-19",
+      "change_7d_pct": 1.5,
+      "change_30d_pct": 2.5
+     }
+    ],
+    "fuel": {
+     "cap": {
+      "a95": 28.08,
+      "diesel": 33.46
+     },
+     "cheapest": {
+      "a95": "tlx",
+      "diesel": "tlx",
+      "lpg": "tlx"
+     }
+    },
+    "news": [
+     {
+      "id": "n_bee7617313fbb9996309",
+      "kind": "article",
+      "category": {
+       "key": "justice",
+       "label": "Justiție și corupție"
+      },
+      "title": "Platforma brățărilor electronice pentru agresori este învechită, spun autoritățile",
+      "dek": "Platforma folosită pentru monitorizarea agresorilor funcționează doar cu cartele SIM 2G, iar stocul de brățări se apropie de limită.",
+      "gravity": 76,
+      "band": "severe",
+      "reach": 3,
+      "region": {
+       "key": "global",
+       "label": "Toată țara"
+      },
+      "regions": [
+       "global"
+      ],
+      "slot": {
+       "key": "evening",
+       "label": "Seara"
+      },
+      "due_at": "2026-11-18T17:00:00+02:00",
+      "published_at": "2026-11-18T01:07:43+02:00",
+      "sources": [
+       {
+        "name": "TV8",
+        "url": "https://tv8.md/2026/11/17/video-sistemul-de-monitorizare-a-agresorilor-invechit-ce-au-scos-la-iveala-audierile-despre-tragedia-de-la-magdacesti/312795"
+       }
+      ],
+      "sources_count": 1,
+      "image": null,
+      "reaction": null,
+      "event_id": "e_c33d4b6476c83fd90140"
+     },
+     {
+      "id": "n_e4458524d922f8863a2d",
+      "kind": "article",
+      "category": {
+       "key": "health",
+       "label": "Sănătate"
+      },
+      "title": "Numărul districtelor cu oncologi a scăzut de la 19 în 2022 la 13 în 2026",
+      "dek": "Numărul districtelor cu oncologi a scăzut de la 19 în 2022 la 13 în 2026, potrivit Curții de Conturi.",
+      "gravity": 75,
+      "band": "severe",
+      "reach": 2,
+      "region": {
+       "key": "global",
+       "label": "Toată țara"
+      },
+      "regions": [
+       "global"
+      ],
+      "slot": {
+       "key": "evening",
+       "label": "Seara"
+      },
+      "due_at": "2026-11-18T17:00:00+02:00",
+      "published_at": "2026-11-18T00:07:54+02:00",
+      "sources": [
+       {
+        "name": "Point.md",
+        "url": "https://point.md/ru/novosti/obschestvo/v-moldove-ne-khvataet-onkologov-a-patsienty-mesiatsami-zhdut-luchevoi-terapii/"
+       }
+      ],
+      "sources_count": 1,
+      "image": null,
+      "reaction": {
+       "score": -0.833,
+       "label": "negative",
+       "comments": 6
+      },
+      "event_id": "e_6b06273b2badf48ad067"
+     },
+     {
+      "id": "n_9f47948e9c3d68e3a6c8",
+      "kind": "article",
+      "category": {
+       "key": "justice",
+       "label": "Justiție și corupție"
+      },
+      "title": "Promo-LEX cere un calendar și o linie bugetară pentru o nouă închisoare",
+      "dek": "Promo-LEX cere un calendar clar pentru o nouă închisoare, după ce Penitenciarul nr. 13 din Chișinău este supraaglomerat.",
+      "gravity": 74,
+      "band": "high",
+      "reach": 2,
+      "region": {
+       "key": "chisinau",
+       "label": "Chișinău"
+      },
+      "regions": [
+       "chisinau",
+       "global"
+      ],
+      "slot": {
+       "key": "evening",
+       "label": "Seara"
+      },
+      "due_at": "2026-11-19T17:00:00+02:00",
+      "published_at": "2026-11-19T02:07:03+02:00",
+      "sources": [
+       {
+        "name": "IPN",
+        "url": "https://ipn.md/asociatia-promo-lex-cere-urgentarea-constructiei-unei-noi-inchisori-in-contextul-supraaglomerarii-din-penitenciarul-nr-13/"
+       },
+       {
+        "name": "IPN",
+        "url": "https://ipn.md/ru/assocziacziya-promo-lex-prizyvaet-uskorit-stroitelstvo-novoj-tyurmy-na-fone-perepolnennosti-penitencziarnogo-uchrezhdeniya-%e2%84%96-13/"
+       },
+       {
+        "name": "Deschide.md",
+        "url": "https://www.deschide.md/asociatia-promo-lex-cere-urgentarea-constructiei-unei-noi-inchisori-in-contextul-supraaglomerarii-din-penitenciarul-nr-13"
+       },
+       "... 2 more"
+      ],
+      "sources_count": 5,
+      "image": null,
+      "reaction": null,
+      "event_id": "e_22ae61593eb9d8000ccc"
+     }
+    ],
+    "law": {
+     "date": "2026-11-19",
+     "title": "Noutăți legislative: 19 noiembrie 2026",
+     "acts": 28
+    },
+    "price": {
+     "name": "Lapte",
+     "min_price": 19.99,
+     "store": "Local"
+    },
+    "updated_at": "2026-11-19T16:36:34+02:00"
+   },
+   "meta": {
+    "credits": 0,
+    "updated_at": "2026-11-19T16:36:34+02:00",
+    "sources": [
+     {
+      "name": "BNM",
+      "url": "https://www.bnm.md/ro/content/ratele-de-schimb",
+      "license": "CC BY 4.0"
+     },
+     {
+      "name": "ANRE",
+      "url": "https://anre.md",
+      "license": "Public data of ANRE"
+     },
+     {
+      "name": "Satelit",
+      "url": "https://satelit.md",
+      "license": "Satelit"
+     },
+     "... 2 more"
+    ],
+    "attribution": "Date: Satelit (satelit.md); Sursa: Banca Națională a Moldovei, bnm.md, CC BY 4.0",
+    "notice": "Aceleași date sunt gratuite la bnm.md."
+   }
+  }
+ }
+}
